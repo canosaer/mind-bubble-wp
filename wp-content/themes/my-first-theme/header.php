@@ -8,7 +8,7 @@
     <body>
         <div class="page-container">
             <header class="site-header">
-                <a href=""><?php echo home_url("/"); ?> <?php get_bloginfo('name'); ?></a>
+                <a href="<?php echo home_url("/"); ?>"> <?php get_bloginfo('name'); ?></a>
                 <nav>
                     <?php
                         wp_nav_menu(array(
