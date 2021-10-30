@@ -1404,6 +1404,13 @@ a {
   grid-template-columns: 1fr;
 }
 
+img {
+  object-fit: cover;
+	object-position: center;
+}
+
+
+
 /* 2. Utility ================================ */
 .hidden {
   display: none;
