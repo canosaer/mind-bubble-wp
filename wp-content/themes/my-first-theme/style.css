@@ -1425,6 +1425,22 @@ a {
   display: none;
 }
 
+.wp-block-search__button{
+  position: absolute;
+  text-align: center;
+  background: #4d6dd1;
+  color: white;
+  padding: 1rem;
+  border-radius: 999rem;
+  cursor: pointer;
+  display: block;
+  border: none;
+}
+
+.wp-block-search__input{
+  padding-left: 1rem;
+}
+
 .wp-block-image{
   margin-bottom: 0;
   display: grid;
