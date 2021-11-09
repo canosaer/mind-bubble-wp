@@ -1,4 +1,4 @@
-<footer>My Footer</footer>
+<footer>©2021 Mind Bubble</footer>
 
 </div>
 
