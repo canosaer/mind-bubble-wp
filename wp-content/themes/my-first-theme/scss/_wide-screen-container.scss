@@ -1,0 +1,15 @@
+@use 'variables';
+@use 'mixins';
+
+.wide-screen-container{
+	@include mixins.default-grid;
+	position: relative;
+	margin-bottom: 3.5rem;
+
+	@include mixins.landscape{
+		background: whitesmoke;
+		margin: 3.5rem 0 5rem;
+		grid-column: 2/3;
+		border-radius: 0.7rem;
+	}
+}

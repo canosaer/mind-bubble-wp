@@ -1,0 +1,111 @@
+/* 
+==============================================
+CONTENT:	Mind Bubble WP
+AUTHOR:		Eric Canosa
+==============================================
+
+TABLE OF CONTENTS:
+
+0. Initialization
+1. Partials
+2. General
+3. Utility
+
+==============================================
+*/
+
+/* 0. Initialization ========================= */
+@use 'reset';
+@use 'variables';
+@use 'mixins';
+
+/* 1. Partials =============================== */
+@use 'preloader';
+@use 'header';
+@use 'hero';
+@use 'programs';
+@use 'tutoring';
+@use 'workshops';
+@use 'games';
+@use 'width-fixer';
+@use 'footer';
+@use 'faq-page';
+@use 'volunteer';
+@use 'wide-screen-container';
+
+/* 2. General =============================== */
+
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+body{
+	background: whitesmoke;
+	font-family:'Lucida Sans', sans-serif;
+}
+
+a{
+	text-decoration: none;
+}
+
+.page-container {
+	@include mixins.default-grid;
+}
+
+/* 2. Utility ================================ */
+
+.hidden{
+	display: none;
+}
+
+.invisible{
+	visibility: hidden;
+}
+
+.transparent{
+	opacity: 0;
+}
+
+.dimmer{
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	background: black;
+	opacity: 0.5;
+	left: 0;
+	top: 0;
+}
+
+.send-to-rear{
+	z-index: -99;
+}
+
+.bring-to-front{
+	z-index: 99;
+}
+
+.answer-expander{
+	height: unset;
+	opacity: unset;
+	padding: 0.7rem;
+}
+
+.answer-arrow-rotate{
+	transform: rotate(135deg);
+}
+
+.answer-arrow-aria-rotate{
+	transform: translateY(-50%) rotate(135deg);
+}
+
+.hide-link{
+	color: whitesmoke;
+}
+
+.collapsed{
+	visibility: hidden;
+	overflow: hidden;
+	height:0;
+	margin-bottom: 0;
+}

@@ -1,0 +1,162 @@
+@use 'variables';
+
+@mixin landscape {
+    @media (min-width: 768px){
+      @content;
+    }
+  }
+  
+@mixin medium-screen {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin wide-screen {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin open-line{
+  background: #ed8936;
+  position: absolute;
+  top: 1rem;
+  right: 0;
+}
+
+@mixin default-grid{
+  display: grid;
+  grid-auto-rows: auto;
+  grid-template-columns: 1fr;
+}
+
+@mixin default-img{
+  object-fit: cover;
+	object-position: center;
+}
+
+@mixin default-background{
+  background-size: cover;
+	background-position: center;
+}
+
+@mixin cover-parent{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+@mixin image-slot{
+  height: 0;
+  position: relative;
+}
+
+@mixin button{
+  text-align: center;
+  background: rgb(77, 109, 209);
+  color: white;
+  height: 2rem;
+  padding: 1rem;
+  font-size: 1.2rem;
+  height: 3rem;
+  width: 20rem;
+  justify-self: center;
+  z-index: 1;
+  border-radius: 999rem;
+  cursor: pointer;
+
+  &:hover{
+    filter:brightness(1.1);
+  }
+}
+
+@mixin program-section-heading{
+  grid-column: 1/-1;
+  font-size: 1.6rem;
+  text-align: center;
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
+}
+
+@mixin program-section-intro{
+  grid-column: 1/-1;
+  font-size: 1rem;
+  text-align: center;
+  line-height: 1.5;
+  margin: 0rem auto 2rem;
+  width: 90%;
+}
+
+@mixin program-card-formatting{
+  box-shadow: 0px 1px 8px -2px rgba(0,0,0,0.75);
+  width: 90%;
+  margin: 0 auto 1.9rem;
+  grid-column: 1/-1;
+  border-radius: 0.7rem;
+}
+
+@mixin program-card-reset{
+  width: unset;
+  margin: unset;
+  grid-column: unset;
+}
+
+@mixin program-card-top-left{
+  grid-column: 1/2;
+  width: 90%;
+  margin-bottom: 1rem;
+  justify-self: right;
+}
+
+@mixin program-card-bottom-left{
+  grid-column: 1/2;
+  width: 90%;
+  justify-self: right;
+}
+
+@mixin program-card-right{
+  grid-column: 2/4;
+  grid-row: 3/5;
+  margin-left: 1rem;
+  width: 90%;
+  height: 100%;
+  justify-self: left;
+}
+
+@mixin program-card-heading{
+  color: black;
+  font-weight: bold;
+  padding: 1.5rem;
+  line-height: 1.4;
+}
+
+@mixin program-section-formatting{
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+	margin-bottom: 5rem;
+  grid-column: 2/3;
+}
+
+@mixin card-image-styling{
+  border-top-left-radius: 0.7rem;
+  border-top-right-radius: 0.7rem;
+}
+
+@mixin hero-input-field{
+  width: 21rem;
+  justify-self: center;
+  z-index: 2;
+  font-size: 1.05rem;
+  padding: 0.35rem;
+  height: 2.0rem;
+  margin-top: -2.25rem;
+  text-align: center;
+}
+
+@mixin menu-heading{
+  text-align: center;
+  line-height: 1.5;
+  z-index: 1;
+}

@@ -1,0 +1,167 @@
+@use 'variables';
+@use 'mixins';
+
+.hero{
+	@include mixins.default-grid;
+	height: 34.35rem;
+	background: url("../../dist/img/hero.jpg");
+	@include mixins.default-background;
+	position: relative;
+	margin-bottom: 3.5rem;
+
+	@include mixins.landscape{
+		height: 37.5rem;
+	}
+
+	&__heading{
+		@include mixins.menu-heading;
+		font-size: 2rem;
+		margin: 10% 3% 0%;
+	}
+
+	&__cta{
+		text-align: center;
+		font-size: 1.05rem;
+		z-index: 1;
+		margin: 0 3% 2rem;
+		line-height: 1.5;
+		padding: 0 3%;
+	}
+
+	&__menu{
+		@include mixins.default-grid;
+	}
+
+	&__button{
+		@include mixins.button;
+		margin-bottom: 2%;
+	}
+
+	&__last-button{
+		@include mixins.button;
+	}
+
+	&__radio{
+		display: none;
+	}
+
+	&__check-row{
+		z-index: 2;
+		display: flex;
+		width: 15.3rem;
+		justify-self: center;
+		height: 3rem;
+	}
+
+	&__checkbox{
+		transform: scale(2);
+	}
+
+	&__label{
+		margin-left: 2rem;
+		background: rgba(255, 255, 255, 0.9);
+		height: 1.2rem;
+		border-radius: 999rem;
+		font-weight: bold;
+	}
+
+	&__button-row{
+		display: flex;
+		justify-self: center;
+		justify-content: space-between;
+		width: 21rem;
+	}
+
+	&__name-input{
+		@include mixins.hero-input-field;
+	}
+
+	&__email-input{
+		@include mixins.hero-input-field;
+	}
+
+	&__validation{
+		text-align: center;
+		color: red;
+		margin: 0 auto;
+		background: rgba(255, 255, 255, 0.9);
+		border-radius: 999rem;
+		height: 1.2rem;
+		width: 18.85rem;
+	}
+
+	&:before{
+		content: "";
+		position: absolute;
+		background: linear-gradient(rgba(245, 245, 245, 1), rgba(245, 245, 245, 0));
+		width: 100%;
+		height: 60%;
+		top: 0;
+		z-index: 0;
+	}
+
+	&:after{
+		content: "";
+		position: absolute;
+		background: linear-gradient(rgba(245, 245, 245, 0), rgba(245, 245, 245, 0.25));
+		width: 100%;
+		height: 40%;
+		bottom: 0;
+		z-index: 0;
+	}
+}
+
+.back-button{
+	display: flex;
+	background: none;
+	border: none;
+	height: 1.75rem;
+	width: 5.3rem;
+	cursor: pointer;
+	z-index: 2;
+	justify-self: center;
+	background: rgba(128, 128, 128, 0.9);
+	color: white;
+	border-radius: 999rem;
+
+	&__icon{
+		font-size: 1.8rem;
+		align-self: center;
+	}
+
+	&__text{
+		font-size: 1.25rem;
+		margin-left: 0.4rem;
+		align-self: center;
+	}
+
+	&:hover{
+		filter:brightness(1.1);
+	  }
+}
+
+.continue-button{
+	display: flex;
+	background: none;
+	border: none;
+	height: 1.75rem;
+	width: 12rem;
+	cursor: pointer;
+	z-index: 2;
+	justify-self: center;
+	background: rgb(77, 109, 209);
+	color: white;
+	border-radius: 999rem;
+	font-size: 1.25rem;
+
+	&__text{
+		font-size: 1.25rem;
+		margin: 0 auto;
+		align-self: center;
+	}
+
+
+	&:hover{
+		filter:brightness(1.1);
+		}
+}
