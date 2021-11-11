@@ -1,3 +1,65 @@
 @use 'variables';
 @use 'mixins';
 
+.service-hero{
+    @include mixins.default-grid;
+    background: #e9e5da;
+    grid-template-columns: 1fr 1fr;
+
+    &__name{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        font-size: 2rem;
+        line-height: 1.5;
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    &__price{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        position: relative;
+        justify-self: center;
+        width: 5.75rem;
+        height: 5.75rem;
+        background: #ed8936;
+        color: white;
+        border-radius: 999rem;
+        text-align: center;
+        line-height: 1.5;
+        padding-top: 1.95rem;
+        font-weight: bold;
+        font-size: 1.25rem;
+        margin-top: 6rem;
+
+        &:after{
+            content: "per month";
+            position: absolute;
+            top: 6.25rem;
+            left: -0.5rem;
+            color: black;
+            width: 7rem;
+        }
+    }
+
+    &__image-slot{
+        grid-column: 2/3;
+        grid-row: 1/2;
+        @include mixins.image-slot;
+        padding-bottom: 65%;
+        margin: 2rem 2rem 2rem 0;
+    }
+
+    &__image{
+        @include mixins.cover-parent;
+        @include mixins.default-img;
+        border-radius: 0.7rem;
+    }
+}
+
+.service-description{
+    @include mixins.default-grid;
+    padding: 2rem;
+    line-height: 1.4;
+    font-size: 1.25rem;
+}

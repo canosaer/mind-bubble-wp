@@ -4,8 +4,10 @@ get_header();
 
 <section class="service-hero">
     <h1 class="service-hero__name"><?php the_field('service_name'); ?></h1>
-    <img class="service-hero__image" src="<?php the_field('icon'); ?>">
-    <p class="service-hero__price"><?php the_field('starting_price'); ?></p>
+    <p class="service-hero__price">$<?php the_field('starting_price'); ?></p>
+    <figure class="service-hero__image-slot">
+        <img class="service-hero__image" src="<?php the_field('icon'); ?>">
+    </figure>
 </section>
 
 <section class="service-description">
