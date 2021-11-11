@@ -4,28 +4,36 @@
 .hero{
 	@include mixins.default-grid;
 	height: 34.35rem;
-	background: url("../../dist/img/hero.jpg");
-	@include mixins.default-background;
 	position: relative;
-	margin-bottom: 3.5rem;
+	place-content: center center;
+	padding: 1.75rem;
 
 	@include mixins.landscape{
 		height: 37.5rem;
 	}
 
+	&__image{
+		@include mixins.cover-parent;
+		@include mixins.default-img;
+		z-index: -1;
+	}
+
 	&__heading{
 		@include mixins.menu-heading;
 		font-size: 2rem;
-		margin: 10% 3% 0%;
+	}
+
+	&__subheading{
+		@include mixins.menu-heading;
+		font-size: 2rem;
 	}
 
 	&__cta{
 		text-align: center;
 		font-size: 1.05rem;
 		z-index: 1;
-		margin: 0 3% 2rem;
 		line-height: 1.5;
-		padding: 0 3%;
+		margin: 1.65rem 0rem 13rem;
 	}
 
 	&__menu{
