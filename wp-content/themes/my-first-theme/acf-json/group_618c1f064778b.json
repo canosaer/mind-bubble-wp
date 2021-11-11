@@ -3,16 +3,16 @@
     "title": "Service Fields",
     "fields": [
         {
-            "key": "field_618c1f3a0f7cd",
-            "label": "Starting Price",
-            "name": "starting_price",
+            "key": "field_618d3d28d8906",
+            "label": "Service Name",
+            "name": "service_name",
             "type": "text",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
                 "width": "",
-                "class": "service__starting_price",
+                "class": "",
                 "id": ""
             },
             "default_value": "",
@@ -31,10 +31,10 @@
             "conditional_logic": 0,
             "wrapper": {
                 "width": "",
-                "class": "service__icon",
+                "class": "",
                 "id": ""
             },
-            "return_format": "array",
+            "return_format": "url",
             "preview_size": "medium",
             "library": "all",
             "min_width": "",
@@ -44,6 +44,44 @@
             "max_height": "",
             "max_size": "",
             "mime_types": ""
+        },
+        {
+            "key": "field_618c1f3a0f7cd",
+            "label": "Starting Price",
+            "name": "starting_price",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_618d28e1d41be",
+            "label": "Description",
+            "name": "description",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
         }
     ],
     "location": [
@@ -64,5 +102,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1636640340
+    "modified": 1636647559
 }

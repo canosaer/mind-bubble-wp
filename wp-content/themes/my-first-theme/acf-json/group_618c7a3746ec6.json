@@ -12,7 +12,7 @@
             "conditional_logic": 0,
             "wrapper": {
                 "width": "",
-                "class": "hero__heading",
+                "class": "",
                 "id": ""
             },
             "default_value": "",
@@ -31,7 +31,7 @@
             "conditional_logic": 0,
             "wrapper": {
                 "width": "",
-                "class": "hero__subheading",
+                "class": "",
                 "id": ""
             },
             "default_value": "",
@@ -50,7 +50,7 @@
             "conditional_logic": 0,
             "wrapper": {
                 "width": "",
-                "class": "hero__cta",
+                "class": "",
                 "id": ""
             },
             "default_value": "",
@@ -69,7 +69,7 @@
             "conditional_logic": 0,
             "wrapper": {
                 "width": "",
-                "class": "hero__image",
+                "class": "",
                 "id": ""
             },
             "return_format": "url",
@@ -102,5 +102,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1636640327
+    "modified": 1636647331
 }

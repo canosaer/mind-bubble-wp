@@ -1,6 +1,7 @@
 <?php
 
 include('includes/post-type-service.php');
+include('includes/post-type-team-member.php');
 function mft_theme_setup(){
     register_nav_menus(
         array(

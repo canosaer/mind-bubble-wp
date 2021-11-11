@@ -2,15 +2,15 @@
 get_header();
 ?>
 
-<?php
-while (have_posts()) : the_post();
-?>
-    <h1><?php the_title(); ?></h1>
-    <?php the_content(); ?>
+<section class="service-hero">
+    <h1 class="service-hero__name"><?php the_field('service_name'); ?></h1>
+    <img class="service-hero__image" src="<?php the_field('icon'); ?>">
+    <p class="service-hero__price"><?php the_field('starting_price'); ?></p>
+</section>
 
-<?php
-endwhile;
-?>
+<section class="service-description">
+    <p class="service-description__text"><?php the_field('description'); ?></p>
+</section>
 
 <?php
 get_footer();
