@@ -6,13 +6,18 @@
     background: #e9e5da;
     grid-template-columns: 1fr 1fr;
 
+    &__price-info{
+        @include mixins.default-grid;
+        place-self: center center;
+    }
+
     &__name{
         grid-column: 1/2;
         grid-row: 1/2;
         font-size: 2rem;
         line-height: 1.5;
         text-align: center;
-        margin-top: 2rem;
+        margin-top: -1rem;
     }
 
     &__price{
@@ -30,7 +35,7 @@
         padding-top: 1.95rem;
         font-weight: bold;
         font-size: 1.25rem;
-        margin-top: 6rem;
+        margin-top: 2.75rem;
 
         &:after{
             content: "per month";
