@@ -161,7 +161,7 @@
 	}
 }
 
-.search-bar{
+.wp-block-search{
 	grid-column: 3/4;
 	place-self: center right;
 	display: flex;
@@ -175,23 +175,49 @@
 	&__input{
 		display: none;
 	}
+}
 
-	&__button{
-		border: none;
-		position: relative;
-		cursor: pointer;
-		height: 100%;
-		width: 100%;
-		background: whitesmoke;
+.wp-block-search.wp-block-search__button-inside .wp-block-search__inside-wrapper .wp-block-search__input{
+	@include mixins.landscape{
+		padding-left: 1.5rem;
 	}
+}
 
-	&__button-icon{
-		@include mixins.cover-parent;
+.wp-block-search.wp-block-search__button-inside .wp-block-search__inside-wrapper{
+	padding: 0;
+	border: none;
+	position: relative;
+}
+
+.wp-block-search .wp-block-search__button{
+	border: none;
+	margin: 0;
+
+	@include mixins.landscape{
+		background: none;
+	}
+}
+
+.search-icon{
+	cursor: pointer;
+	opacity: 0.8;
+	transform: scale(2) scaleX(-1);
+
+	@include mixins.landscape{
+		position: absolute;
+		left: 0;
+		top: 0.1rem;
+		transform: scaleX(-1);
+		opacity: 0.5;
+
+		&:hover{
+			opacity: 1;
+		}
 	}
 }
 
 @include mixins.landscape{
-	.search-bar{
+	.wp-block-search{
 		width: 70%;
 		max-width: 15rem;
 		border: 1px solid rgba(0,0,0,0.5);
@@ -206,27 +232,6 @@
 			height: 100%;
 			background: none;
 			padding: 0.3rem;
-		}
-	
-		&__button{
-			background: white;
-			border-radius: 999rem;
-			margin: auto 0.1rem auto 0.5rem;
-			height: 80%;
-			width: unset;
-		}
-	
-		&__button-icon{
-			filter: invert(52%) sepia(9%) saturate(19%) hue-rotate(10deg) brightness(95%) contrast(86%);
-			position: absolute;
-			width: 100%;
-			height: 70%;
-			top: 0.2rem;
-			left: 0;
-
-			&:hover{
-				filter: unset;
-			}
 		}
 	}
 }
