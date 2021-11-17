@@ -1,7 +1,6 @@
 <?php
 /*
 * Template Name: Service Landing Page
-* Template Post Type: landing page
 */
 
 
