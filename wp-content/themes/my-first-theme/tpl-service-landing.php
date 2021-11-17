@@ -8,13 +8,26 @@ get_header();
 ?>
 
 <?php
-while (have_posts()) : the_post();
-?>
-    <h1><?php the_title(); ?></h1>
-    <?php the_content(); ?>
+    $serviceLandingArgs = array();
+    $serviceLandingQ = new WP_Query( $serviceLandingArgs );
+    if($serviceLandingQ->have_posts()){
+        ?>
+        <ul class="example">
+        <?php
 
-<?php
-endwhile;
+
+            while ($serviceLandingQ->have_posts()){
+                $serviceLandingQ->the_post();
+                ?>
+
+
+                <?php
+            }
+        ?>
+        </ul>
+        <?php
+    }
+    wp_reset_postdata();
 ?>
 
 <?php
