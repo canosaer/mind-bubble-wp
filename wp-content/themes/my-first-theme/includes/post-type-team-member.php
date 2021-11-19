@@ -36,7 +36,7 @@ function mft__add_team_member_cpt() {
 		'label'                 => __( 'Team Member', 'text_domain' ),
 		'description'           => __( 'Team Member', 'text_domain' ),
 		'labels'                => $labels,
-		'supports'              => array( 'title'),
+		'supports'              => array( 'title', 'page-attributes'),
 		'taxonomies'            => array( 'category', 'post_tag' ),
 		'hierarchical'          => false,
 		'public'                => true,
