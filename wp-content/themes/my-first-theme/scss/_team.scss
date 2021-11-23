@@ -1,0 +1,78 @@
+@use 'variables';
+@use 'mixins';
+
+.team-landing{
+	@include mixins.default-grid;
+	@include mixins.generic-display-section;
+
+	@include mixins.medium-screen{
+		grid-template-columns: 1fr minmax(0,80rem) 1fr;
+	}
+
+	&__heading{
+		@include mixins.heading-format;
+		@include mixins.section-heading-format;
+
+		@include mixins.landscape{
+			@include mixins.generic-landscape-heading;
+		}
+
+		@include mixins.medium-screen{
+			grid-column: 2/3;
+		}
+		
+	}
+
+	&__bold-text{
+		@include mixins.default-bold-text;
+
+		@include mixins.landscape{
+			display: unset;
+		}
+	}
+
+	&__card-display{
+		@include mixins.default-grid;
+		@include mixins.generic-card-display;
+		grid-template-columns: repeat(auto-fit, minmax(21.35rem, 0.4fr));
+
+		@include mixins.medium-screen{
+			grid-column: 2/3;
+		}
+	}
+}
+
+.team-landing .card{
+    @include mixins.image-slot;
+    padding-bottom: 100%;
+
+    &:hover .card__text-display{
+        height: 50%;
+    }
+
+    &:before{
+        @include mixins.generic-dotted-line;
+    }
+
+    &:after{
+        @include mixins.generic-blue-bar;
+    }
+
+    &__image{
+		@include mixins.cover-parent;
+		@include mixins.default-img;
+	}
+
+	&__text-display{
+		@include mixins.generic-text;
+	}
+
+	&__heading{
+		@include mixins.generic-subheading;
+	}
+
+	&__subheading{
+		@include mixins.generic-caption;
+	}
+
+}

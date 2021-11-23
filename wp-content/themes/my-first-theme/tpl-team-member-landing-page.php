@@ -9,7 +9,7 @@ get_header();
 
 <section class="team-landing">
     <h1 class="team-landing__heading">Team</h1>
-    <div class="team-landing__gallery">
+    <div class="team-landing__card-display">
 
     <?php
         $teamLandingArgs = array(

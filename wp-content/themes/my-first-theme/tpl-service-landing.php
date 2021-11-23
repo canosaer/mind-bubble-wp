@@ -9,7 +9,7 @@ get_header();
 
 <section class="service-landing">
     <h1 class="service-landing__heading">Services</h1>
-    <div class="service-landing__gallery">
+    <div class="service-landing__card-display">
 
     <?php
         $serviceLandingArgs = array(
