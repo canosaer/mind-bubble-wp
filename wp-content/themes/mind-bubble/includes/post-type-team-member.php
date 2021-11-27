@@ -1,12 +1,13 @@
 <?php
+
 // Register Custom Post Type
-function mft__add_service_cpt() {
+function mb__add_team_member_cpt() {
 
 	$labels = array(
-		'name'                  => _x( 'Services', 'Post Type General Name', 'text_domain' ),
-		'singular_name'         => _x( 'Service', 'Post Type Singular Name', 'text_domain' ),
-		'menu_name'             => __( 'Services', 'text_domain' ),
-		'name_admin_bar'        => __( 'Service', 'text_domain' ),
+		'name'                  => _x( 'Team Members', 'Post Type General Name', 'text_domain' ),
+		'singular_name'         => _x( 'Team Member', 'Post Type Singular Name', 'text_domain' ),
+		'menu_name'             => __( 'Team Members', 'text_domain' ),
+		'name_admin_bar'        => __( 'Team Member', 'text_domain' ),
 		'archives'              => __( 'Item Archives', 'text_domain' ),
 		'attributes'            => __( 'Item Attributes', 'text_domain' ),
 		'parent_item_colon'     => __( 'Parent Item:', 'text_domain' ),
@@ -32,10 +33,10 @@ function mft__add_service_cpt() {
 		'filter_items_list'     => __( 'Filter items list', 'text_domain' ),
 	);
 	$args = array(
-		'label'                 => __( 'Service', 'text_domain' ),
-		'description'           => __( 'Service', 'text_domain' ),
+		'label'                 => __( 'Team Member', 'text_domain' ),
+		'description'           => __( 'Team Member', 'text_domain' ),
 		'labels'                => $labels,
-		'supports'              => array( 'title', 'excerpt' ),
+		'supports'              => array( 'title', 'page-attributes'),
 		'taxonomies'            => array( 'category', 'post_tag' ),
 		'hierarchical'          => false,
 		'public'                => true,
@@ -50,8 +51,7 @@ function mft__add_service_cpt() {
 		'publicly_queryable'    => true,
 		'capability_type'       => 'page',
 	);
-	register_post_type( 'service', $args );
+	register_post_type( 'team_member', $args );
 
 }
-
-add_action( 'init', 'mft__add_service_cpt', 0 );
+add_action( 'init', 'mb__add_team_member_cpt', 0 );

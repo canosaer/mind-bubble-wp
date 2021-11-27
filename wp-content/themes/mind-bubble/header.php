@@ -19,7 +19,7 @@
                             'theme_location' => 'primary',
                             'menu_class' => 'menu__list',
                             'container_class' => 'menu__container',
-                            'items_wrap' => '<ul id="mft-menu" class="%2$s">%3$s</ul>'
+                            'items_wrap' => '<ul id="mb-menu" class="%2$s">%3$s</ul>'
                         ));
                     ?>
                 </nav>
