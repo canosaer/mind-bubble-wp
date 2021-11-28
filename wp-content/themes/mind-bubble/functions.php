@@ -1,7 +1,6 @@
 <?php
 
-include('includes/post-type-service.php');
-include('includes/post-type-team-member.php');
+include('includes/post-type-workshops.php');
 function mb_theme_setup(){
     register_nav_menus(
         array(
