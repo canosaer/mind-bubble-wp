@@ -3,6 +3,8 @@
 include('includes/post-type-workshops.php');
 include('includes/post-type-team.php');
 include('includes/post-type-games.php');
+include('includes/post-type-featured-programs.php');
+
 function mb_theme_setup(){
     register_nav_menus(
         array(
@@ -20,5 +22,3 @@ function mb_load_scripts() {
 }
 
 add_action('wp_enqueue_scripts', 'mb_load_scripts');
-
-
