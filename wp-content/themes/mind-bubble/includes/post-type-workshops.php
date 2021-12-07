@@ -50,6 +50,7 @@ function mb__add_workshops_cpt() {
 		'exclude_from_search'   => false,
 		'publicly_queryable'    => true,
 		'capability_type'       => 'page',
+		'rewrite' => array('slug' => 'past-workshops'),
 	);
 	register_post_type( 'workshops', $args );
 

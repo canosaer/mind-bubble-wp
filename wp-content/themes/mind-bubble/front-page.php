@@ -9,6 +9,8 @@ get_header();
     <h3 class="hero__cta"><?php the_field('hero_cta'); ?></h3>
 </section>
 
+<?php echo do_shortcode('[upcomingevents number=3 url="https://calendar.google.com/calendar/ical/admin%40mindbubble.org/public/basic.ics"]'); ?>
+
 <?php
 get_footer();
 ?>
