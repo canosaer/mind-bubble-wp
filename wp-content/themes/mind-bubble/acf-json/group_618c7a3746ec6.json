@@ -85,8 +85,8 @@
         },
         {
             "key": "field_61a8fd4b19e38",
-            "label": "Programs Heading",
-            "name": "programs_heading",
+            "label": "Featured Programs Heading",
+            "name": "featured_programs_heading",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -121,5 +121,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1638464855
+    "modified": 1638912012
 }

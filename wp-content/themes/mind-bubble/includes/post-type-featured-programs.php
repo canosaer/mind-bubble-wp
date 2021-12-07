@@ -35,7 +35,7 @@ function mb__add_featured_programs_cpt() {
 		'label'                 => __( 'Featured Programs', 'text_domain' ),
 		'description'           => __( 'Featured Programs', 'text_domain' ),
 		'labels'                => $labels,
-		'supports'              => array( 'title' ),
+		'supports'              => array( 'title', 'page-attributes' ),
 		'taxonomies'            => array( 'category', 'post_tag' ),
 		'hierarchical'          => false,
 		'public'                => true,
