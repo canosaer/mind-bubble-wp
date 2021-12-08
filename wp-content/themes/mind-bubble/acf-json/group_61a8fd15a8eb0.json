@@ -68,7 +68,7 @@
                 "class": "",
                 "id": ""
             },
-            "return_format": "array",
+            "return_format": "url",
             "preview_size": "large",
             "library": "all",
             "min_width": "",
@@ -89,7 +89,7 @@
             "conditional_logic": 0,
             "wrapper": {
                 "width": "",
-                "class": "",
+                "class": "program__card-description",
                 "id": ""
             },
             "default_value": "",
@@ -174,7 +174,7 @@
         {
             "key": "field_61a9002f2492a",
             "label": "2nd Additional Link Heading",
-            "name": "1st_additional_link_heading",
+            "name": "2nd_additional_link_heading",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -227,7 +227,7 @@
                 "class": "",
                 "id": ""
             },
-            "return_format": "array"
+            "return_format": "url"
         }
     ],
     "location": [
@@ -248,5 +248,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1638468571
+    "modified": 1638931810
 }

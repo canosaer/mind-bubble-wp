@@ -23,8 +23,7 @@ TABLE OF CONTENTS:
 @use 'preloader';
 @use 'header';
 @use 'hero';
-@use 'programs';
-@use 'tutoring';
+@use 'program';
 @use 'workshops';
 @use 'games';
 @use 'width-fixer';
@@ -49,6 +48,14 @@ body{
 
 a{
 	text-decoration: none;
+}
+
+strong{
+	font-weight: bold;
+}
+
+em{
+	font-style: italic;
 }
 
 .page-container {

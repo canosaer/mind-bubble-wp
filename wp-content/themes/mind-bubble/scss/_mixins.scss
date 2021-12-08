@@ -133,6 +133,12 @@
   line-height: 1.4;
 }
 
+@mixin program-card-description{
+  color: black;
+  padding: 1.5rem;
+  line-height: 1.4;
+}
+
 @mixin program-section-formatting{
   grid-template-columns: repeat(3, minmax(0, 1fr));
 	margin-bottom: 5rem;

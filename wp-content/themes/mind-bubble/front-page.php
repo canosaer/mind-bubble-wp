@@ -14,7 +14,7 @@ get_header();
 
     <?php 
         $featuredProgramsArgs = array(
-            'post_type' => 'Featured Programs',
+            'post_type' => 'featured_programs',
             'posts_per_page' => -1,
             'orderby' => 'menu_order title',
             'order' => 'asc'
@@ -24,42 +24,65 @@ get_header();
         if($featuredProgramsQ->have_posts()){
             while ($featuredProgramsQ->have_posts()){
                 $featuredProgramsQ->the_post();
+                $postNumber = $featuredProgramsQ->current_post;
                 ?>
                     
-
+                <div class="width-fixer">
+                    <div class="program">
+                        <h3 class="program__heading"><?php the_field('heading'); ?></h3>
+                        <p class="program__caption"><?php the_field('caption'); ?></p>
+                        <a href="<?php the_field('1st_additional_link'); ?>" class="program__card <?php 
+                            if($postNumber%2 == 0){
+                                echo "program__card_top-left";
+                            }
+                            else{
+                                echo "program__card_top-right";
+                            }
+                            ?>">
+                            <figure class="program__image-slot">
+                                <img class="program__card-image" src="<?php the_field('1st_additional_link_image'); ?>" loading="lazy" alt="featured program">
+                            </figure>
+                            <h4 class="program__card-heading"><?php the_field('1st_additional_link_heading'); ?></h4>
+                        </a>
+                        <a href="<?php the_field('spotlight_link'); ?>" class="program__card <?php 
+                            if($postNumber%2 == 0){
+                                echo "program__card_right-spotlight";
+                            }
+                            else{
+                                echo "program__card_left-spotlight";
+                            }
+                            ?>">
+                            <figure class="program__image-slot">
+                                <img class="program__card-image" src="<?php the_field('spotlight_image'); ?>" loading="lazy" alt="spotlight program">
+                            </figure>
+                            <div class="program__card-description"><?php the_field('spotlight_description'); ?></div>
+                        </a>
+                        <a href="<?php the_field('2nd_additional_link'); ?>" class="program__card <?php 
+                            if($postNumber%2 == 0){
+                                echo "program__card_bottom-left";
+                            }
+                            else{
+                                echo "program__card_bottom-right";
+                            }
+                            ?>">
+                            <figure class="program__image-slot">
+                                <img class="program__card-image" src="<?php the_field('2nd_additional_link_image'); ?>" loading="lazy" alt="featured program">
+                            </figure>
+                            <h4 class="program__card-heading"><?php the_field('2nd_additional_link_heading'); ?></h4>
+                        </a>
+                        <a class="program__button" href="<?php the_field('more_info'); ?>">Learn more about <?php the_title(); ?></a>
+                    </div>
+                </div>
 
                     
+
                 <?php
             }
         }
         wp_reset_postdata();
     ?>
 
-    <div class="width-fixer">
-        <div class="program">
-            <h3 class="program__heading">Free One-on-One Tutoring</h3>
-            <p class="tutoring__intro-text">Meet with a volunteer tutor in-person or online and get individualized instruction in a fun, relaxed environment.</p>
-            <a href="#" class="tutoring__card tutoring__card_tutors">
-                <figure class="tutoring__image-slot">
-                    <img class="tutoring__card-image" src="dist/img/tutor.jpg" loading="lazy" alt="professional young adult leaning against wall">
-                </figure>
-                <h4 class="tutoring__card-heading">Tutors</h4>
-            </a>
-            <a href="#" class="tutoring__card tutoring__card_grades">
-                <figure class="tutoring__image-slot">
-                    <img class="tutoring__card-image" src="dist/img/grades.jpg" loading="lazy" alt="kids of different ages">
-                </figure>
-                <p class="tutoring__card-heading">Grades 4-10:<span class="tutoring__card-text"> Get individualized support for academics, test prep, enrichment, and learning differences.</span></p>
-            </a>
-            <a href="#" class="tutoring__card tutoring__card_schedule">
-                <figure class="tutoring__image-slot">
-                    <img class="tutoring__card-image" src="dist/img/student.jpg" loading="lazy" alt="happy student raising hand">
-                </figure>
-                <h4 class="tutoring__card-heading">Schedule</h4>
-            </a>
-            <a class="tutoring__button" href="#">Learn more about Tutoring</a>
-        </div>
-	</div>
+    
 </section>
 
 <?php echo do_shortcode('[upcomingevents number=3 url="https://calendar.google.com/calendar/ical/admin%40mindbubble.org/public/basic.ics"]'); ?>
