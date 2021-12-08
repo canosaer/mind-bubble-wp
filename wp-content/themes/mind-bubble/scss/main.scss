@@ -20,12 +20,9 @@ TABLE OF CONTENTS:
 @use 'mixins';
 
 /* 1. Partials =============================== */
-@use 'preloader';
 @use 'header';
 @use 'hero';
 @use 'program';
-@use 'workshops';
-@use 'games';
 @use 'width-fixer';
 @use 'footer';
 @use 'faq-page';
@@ -34,6 +31,7 @@ TABLE OF CONTENTS:
 @use 'homework';
 @use 'team';
 @use 'services';
+@use 'upcoming-events';
 
 /* 2. General =============================== */
 

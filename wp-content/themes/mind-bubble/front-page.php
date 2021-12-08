@@ -74,8 +74,6 @@ get_header();
                     </div>
                 </div>
 
-                    
-
                 <?php
             }
         }
@@ -85,7 +83,12 @@ get_header();
     
 </section>
 
-<?php echo do_shortcode('[upcomingevents number=3 url="https://calendar.google.com/calendar/ical/admin%40mindbubble.org/public/basic.ics"]'); ?>
+<section class="upcoming">
+
+    <h2 class="upcoming__heading">Upcoming Events</h2>
+    <?php echo do_shortcode('[upcomingevents number=3 url="https://calendar.google.com/calendar/ical/admin%40mindbubble.org/public/basic.ics"]'); ?>
+
+</section>
 
 <?php
 get_footer();

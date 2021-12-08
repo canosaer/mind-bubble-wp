@@ -1,0 +1,70 @@
+@use 'variables';
+@use 'mixins';
+
+.upcoming{
+    @include mixins.default-grid;
+
+    &__heading{
+        text-align: center;
+        font-size: 1.6rem;
+        margin: 1rem 0 2rem;
+    }
+}
+
+.upcoming-events{
+    @include mixins.default-grid;
+
+    thead{
+        display: none;
+    }
+
+    tbody{
+        @include mixins.default-grid;
+
+        @include mixins.landscape{
+            grid-template-columns: repeat(3, 1fr);
+            padding: 0 5%;
+            max-width: 73rem;
+            justify-self: center;
+        }
+    }
+
+    tr{
+        @include mixins.default-grid;
+        max-width: 28rem;
+        margin: 1rem 0.5rem;
+        box-shadow: 0 1px 3px 0 rgb(0 0 0 / 10%), 0 1px 2px 0 rgb(0 0 0 / 6%);
+        padding: 2rem;
+        width: 80%;
+        justify-self: center;
+
+        @include mixins.landscape{
+            width: 90%;
+        }
+    }
+
+    tbody tr td{
+        text-align: center;
+
+
+        &:first-child{
+            grid-row: 3/4;
+        }
+
+        &:nth-child(2){
+            grid-row: 2/3;
+            padding: 0.65rem 0 1rem;
+            font-size: .875rem;
+            color: #4a5568;
+        }
+
+        &:nth-child(3){
+            font-size: 1.25rem;
+        }
+
+        &:nth-child(4){
+            display: none;
+        }
+
+    }
+}

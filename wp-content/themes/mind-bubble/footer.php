@@ -1,4 +1,4 @@
-<footer>©2021 Mind Bubble</footer>
+<footer>&copy;<?php echo date('Y'); ?> Mind Bubble</footer>
 
 </div>
 
