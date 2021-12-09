@@ -892,22 +892,41 @@ table {
   }
 }
 
-footer {
+.footer {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-rows: auto;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3, 1fr);
   margin-top: 3.5rem;
   border-top: 1px solid lightgray;
-  font-size: 0.875rem;
-  text-align: center;
-  color: #909097;
   margin-bottom: 4rem;
-  padding-top: 2rem;
+  padding: 2rem 1.5rem;
+  font-size: 0.875rem;
 }
-
-.faq {
-  color: #4d6dd1;
-  position: relative;
-  background: none;
-  border: none;
-  cursor: pointer;
+@media (min-width: 1200px) {
+  .footer {
+    padding: 2rem 4%;
+  }
+}
+.footer__faq {
+  color: blue;
+  -ms-grid-row-align: center;
+  -ms-grid-column-align: left;
+  place-self: center left;
+}
+.footer__copyright {
+  color: #909097;
+  -ms-grid-row-align: center;
+  -ms-grid-column-align: center;
+  place-self: center center;
+}
+.footer ul {
+  -ms-grid-row-align: center;
+  -ms-grid-column-align: right;
+  place-self: center right;
 }
 
 .faq-page {
