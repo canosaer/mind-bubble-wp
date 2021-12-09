@@ -774,7 +774,7 @@ table {
     -ms-grid-row-span: 2;
     grid-row: 3/5;
     margin-left: 1rem;
-    width: 90%;
+    width: 93%;
     height: 100%;
     -ms-grid-column-align: left;
         justify-self: left;
@@ -787,15 +787,14 @@ table {
     -ms-grid-row-span: 2;
     grid-row: 3/5;
     margin-left: 1rem;
-    width: 90%;
+    width: 93%;
     height: 100%;
     -ms-grid-column-align: left;
         justify-self: left;
     grid-column: 1/3;
     grid-row: 3/5;
+    margin-left: unset;
     margin-right: 1rem;
-    width: 90%;
-    height: 100%;
     -ms-grid-column-align: right;
         justify-self: right;
   }
@@ -1627,6 +1626,7 @@ footer {
 }
 .upcoming-events tbody tr td {
   text-align: center;
+  line-height: 1.1;
 }
 .upcoming-events tbody tr td:first-child {
   -ms-grid-row: 3;

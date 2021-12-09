@@ -74,9 +74,8 @@
 				@include mixins.program-card-right;
 				grid-column: 1/3;
 				grid-row: 3/5;
+				margin-left: unset;
 				margin-right: 1rem;
-				width: 90%;
-				height: 100%;
 				justify-self: right;
 			}
 
