@@ -8,11 +8,11 @@
     <body>
         <div class="page-container">
             <header class="site-header">
-                <input type="radio" class="toggle__radio" name="toggle" id="toggle" aria-label="nav-menu-toggle" role="button">
+                <!-- <input type="radio" class="toggle__radio" name="toggle" id="toggle" aria-label="nav-menu-toggle" role="button">
                 <label for="toggle" class="toggle">
                     <div class="toggle__line toggle__line_1"></div>
                     <div class="toggle__line toggle__line_2"></div>
-                </label>
+                </label> -->
                 <nav class="menu">
                     <?php
                         wp_nav_menu(array(
