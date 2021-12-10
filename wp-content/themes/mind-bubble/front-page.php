@@ -49,8 +49,6 @@ get_header();
         </button>
     </nav>
 
-
-    <!-- <h3 class="hero__cta"><?php the_field('hero_cta'); ?></h3> -->
 </section>
 
 <section class="featured-programs">
