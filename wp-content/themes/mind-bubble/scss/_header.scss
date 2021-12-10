@@ -1,6 +1,8 @@
 @use 'variables';
 @use 'mixins';
 
+// --------- LAYOUT -----------
+
 .site-header{
 	@include mixins.default-grid;
 	grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -14,6 +16,8 @@
 
 }
 
+// -------- MOBILE / TOGGLE MENU -----------
+
 #mega-menu-wrap-primary .mega-menu-toggle.mega-menu-open:after{
 	z-index: 2;
 }
@@ -25,6 +29,9 @@
 #mega-menu-wrap-primary .mega-menu-toggle + #mega-menu-primary{
 	z-index: 3;
 }
+
+
+// -------- WIDE SCREEN MENU ------------
 
 .menu{
 	@include mixins.default-grid;
@@ -43,6 +50,8 @@
 	display: flex;
 	justify-content: space-between;
 }
+
+// -------- LOGO / HOME BUTTON --------
 
 .logo{
 	grid-column: 2/3;
@@ -64,69 +73,7 @@
 	}
 }
 
-// .menu{
-
-
-// 	@include mixins.wide-screen{
-// 		grid-row: 1/2;
-// 		grid-column: 2/4;
-// 		position: unset;
-// 		width: unset;
-// 		opacity: unset;
-// 		right: unset;
-// 		top: unset;
-// 		height: unset;
-// 		padding: unset;
-// 		transition: unset;
-// 		visibility: unset;
-
-// 		&__container{
-// 			@include mixins.default-grid;
-// 		}
-	
-// 		&__list{
-// 			place-self: center center;
-// 			display: flex;
-// 			width: 100%;
-// 			justify-content: space-between;
-// 		}
-// 	}
-
-// 	&_open{
-// 		background: whitesmoke;
-// 		width: 20.6rem;
-// 		opacity: 1;
-// 		visibility: unset;
-// 	}
-
-// }
-
-// .menu-item{
-
-// 	&_open{
-// 		margin-top: 3rem;
-// 		text-align: right;
-// 	}
-
-// 	@include mixins.wide-screen{
-// 		display: flex;
-// 		padding: 1rem 0rem;
-// 	}
-
-// 	a{
-// 		padding: 0.3rem;
-// 		font-size: 1.75rem;
-// 		color: black;
-
-// 		@include mixins.wide-screen{
-// 			font-size: 1.05rem;
-// 		}
-
-// 		&:hover{
-// 			color: var(--orange);
-// 		}
-// 	}
-// }
+// --------- SEARCH BAR -----------
 
 .wp-block-search{
 	grid-column: 3/4;

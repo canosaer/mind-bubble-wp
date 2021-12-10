@@ -365,7 +365,7 @@ table {
   font-size: 1.05rem;
   z-index: 1;
   line-height: 1.5;
-  margin: 1.65rem 0rem 13rem;
+  margin: 1.65rem 0rem 2rem;
 }
 .hero__menu {
   display: -ms-grid;
@@ -450,7 +450,7 @@ table {
   font-size: 1.05rem;
   padding: 0.35rem;
   height: 2rem;
-  margin-top: -2.25rem;
+  margin-top: -1rem;
   text-align: center;
 }
 .hero__email-input {
@@ -461,13 +461,13 @@ table {
   font-size: 1.05rem;
   padding: 0.35rem;
   height: 2rem;
-  margin-top: -2.25rem;
+  margin-top: -1rem;
   text-align: center;
 }
 .hero__validation {
   text-align: center;
   color: red;
-  margin: 0 auto;
+  margin: 0.5rem auto;
   background: rgba(255, 255, 255, 0.9);
   border-radius: 999rem;
   height: 1.2rem;

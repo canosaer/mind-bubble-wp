@@ -6,7 +6,51 @@ get_header();
     <img class="hero__image" src="<?php the_field('hero_image'); ?>">
     <h1 class="hero__heading"><?php the_field('hero_heading'); ?></h1>
     <h2 class="hero__subheading"><?php the_field('hero_subheading'); ?></h2>
-    <h3 class="hero__cta"><?php the_field('hero_cta'); ?></h3>
+
+    <form class="hero__menu hero__menu_0">
+        <h3 class="hero__cta"><?php the_field('hero_cta'); ?></h3>
+        <input type="radio" name="parent" id="parent" class="hero__radio">
+        <label class="hero__button" for="parent" tabindex="0">I'm a Parent or Guardian</label>
+        <input type="radio" name="volunteer" id="volunteer" class="hero__radio">
+        <label class="hero__last-button" for="volunteer" tabindex="0">I'm a Volunteer</label>
+    </form>
+    <form class="hero__menu hero__menu_1 hidden">
+        <h3 class="hero__cta">Which programs are you interested in?</h3>
+        <fieldset class="hero__check-row">
+            <input type="checkbox" name="tutoring" id="tutoring" class="hero__checkbox">
+            <label class="hero__label" for="tutoring">1-on-1 Tutoring</label>
+        </fieldset>
+        <fieldset class="hero__check-row">
+            <input type="checkbox" name="workshops" id="workshops" class="hero__checkbox">
+            <label class="hero__label" for="workshops">Educational Workshops</label>
+        </fieldset>
+        <p class="hero__validation hero__validation_program invisible">Select a program to continue</p>
+    </form>
+    <form class="hero__menu hero__menu_2 hidden">
+        <label for="username" class="hero__cta">What is your name?</label>
+        <input type="text" required="true" name="username" id="username" class="hero__name-input" aria-required="true">
+        <p class="hero__validation hero__validation_name invisible">Enter your name to continue</p>
+    </form>
+    <form class="hero__menu hero__menu_3 hidden">
+        <label for="email" class="hero__cta">What is your email address?</label>
+        <input type="text" required="true" name="email" id="email" class="hero__email-input" aria-required="true">
+        <p class="hero__validation hero__validation_email invisible">Enter a valid email address to continue</p>
+    </form>
+    <form class="hero__menu hero__menu_4 hidden">
+        <h3 class="hero__cta">Thanks for signing up! Check your email for more information!</h3>
+    </form>
+    <nav class="hero__button-row invisible">
+        <button class="back-button">
+            <i class="fas fa-caret-left back-button__icon"></i>
+            <p class="back-button__text">Back</p>
+        </button>
+        <button class="continue-button">
+            <p class="continue-button__text">Continue</p>
+        </button>
+    </nav>
+
+
+    <!-- <h3 class="hero__cta"><?php the_field('hero_cta'); ?></h3> -->
 </section>
 
 <section class="featured-programs">
