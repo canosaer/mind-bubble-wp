@@ -8,11 +8,6 @@
     <body>
         <div class="page-container">
             <header class="site-header">
-                <!-- <input type="radio" class="toggle__radio" name="toggle" id="toggle" aria-label="nav-menu-toggle" role="button">
-                <label for="toggle" class="toggle">
-                    <div class="toggle__line toggle__line_1"></div>
-                    <div class="toggle__line toggle__line_2"></div>
-                </label> -->
                 <nav class="menu">
                     <?php
                         wp_nav_menu(array(
@@ -26,12 +21,6 @@
                 <figure class="logo">
                     <a class="logo__link" href="<?php echo home_url("/"); ?>"></a>
                 </figure>
-                <!-- <form class="search-bar">
-                    <button class="search-bar__button">
-                        <img class="search-bar__button-icon" src="http://localhost/wp-content/uploads/2021/11/magnifying-glass.png" alt="search">
-                    </button>
-                    <input class="search-bar__input" placeholder="Search">
-                </form> -->
 
                 <form role="search" method="get" action="http://localhost/" class="wp-block-search__button-inside wp-block-search__icon-button wp-block-search">
                     <div class="wp-block-search__inside-wrapper">
