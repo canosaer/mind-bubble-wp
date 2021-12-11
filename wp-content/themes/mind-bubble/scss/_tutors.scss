@@ -1,0 +1,26 @@
+@use 'variables';
+@use 'mixins';
+
+.tutor-hero{
+    @include mixins.default-grid;
+
+    &__image{
+		@include mixins.default-img;
+        object-position: right;
+		z-index: -1;
+        width: 100%;
+        height: 24rem;
+    }
+
+    &__text{
+        text-align: center;
+        line-height: 1.2;
+        font-size: 1.6rem;
+        margin: 1rem 1rem;
+        opacity: 0.85;
+    }
+
+    &__button{
+        @include mixins.button;
+    }
+}

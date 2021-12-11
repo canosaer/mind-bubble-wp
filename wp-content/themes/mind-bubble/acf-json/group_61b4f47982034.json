@@ -1,30 +1,11 @@
 {
-    "key": "group_61a3f9c7230fd",
-    "title": "Team Member Fields",
+    "key": "group_61b4f47982034",
+    "title": "Tutors Landing Page Fields",
     "fields": [
         {
-            "key": "field_61a3f9d792b41",
-            "label": "Name",
-            "name": "name",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_61a3fa7392b45",
-            "label": "Headshot",
-            "name": "headshot",
+            "key": "field_61b4f8c3a39d6",
+            "label": "Hero Image",
+            "name": "hero_image",
             "type": "image",
             "instructions": "",
             "required": 0,
@@ -46,9 +27,9 @@
             "mime_types": ""
         },
         {
-            "key": "field_61a3f9dd92b42",
-            "label": "Title",
-            "name": "title",
+            "key": "field_61b4f8d6a39d7",
+            "label": "Hero Text",
+            "name": "hero_text",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -65,9 +46,100 @@
             "maxlength": ""
         },
         {
-            "key": "field_61a3f9f492b44",
-            "label": "Email",
-            "name": "email",
+            "key": "field_61b4f8fea39d8",
+            "label": "Button Text",
+            "name": "button_text",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_61b5045365cb1",
+            "label": "Tutoring Sign Up Link",
+            "name": "tutoring_sign_up_link",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url"
+        },
+        {
+            "key": "field_61b4f482aa621",
+            "label": "Heading",
+            "name": "heading",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_61b4f490aa622",
+            "label": "Intro Text",
+            "name": "intro_text",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_61b4f4c9aa623",
+            "label": "Did You Know?",
+            "name": "did_you_know",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_61b50e10c1547",
+            "label": "More Info Email Address",
+            "name": "more_info_email_address",
             "type": "email",
             "instructions": "",
             "required": 0,
@@ -81,71 +153,14 @@
             "placeholder": "",
             "prepend": "",
             "append": ""
-        },
-        {
-            "key": "field_61a3fb3b92b46",
-            "label": "Phone",
-            "name": "phone",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_61a3f9e092b43",
-            "label": "Bio",
-            "name": "bio",
-            "type": "wysiwyg",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "tabs": "all",
-            "toolbar": "full",
-            "media_upload": 1,
-            "delay": 0
-        },
-        {
-            "key": "field_61a3fb4e92b47",
-            "label": "LinkedIn",
-            "name": "linkedin",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
         }
     ],
     "location": [
         [
             {
-                "param": "post_type",
+                "param": "page_template",
                 "operator": "==",
-                "value": "team"
+                "value": "tpl-tutors-landing-page.php"
             }
         ]
     ],
@@ -158,5 +173,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1638136828
+    "modified": 1639255615
 }

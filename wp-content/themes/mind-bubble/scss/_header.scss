@@ -30,6 +30,13 @@
 	z-index: 3;
 }
 
+@media only screen and (max-width: 1199px)
+{
+	#mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item > a.mega-menu-link:hover{
+		color: var(--orange);
+	}
+	
+}
 
 // -------- WIDE SCREEN MENU ------------
 

@@ -46,9 +46,9 @@
             "mime_types": ""
         },
         {
-            "key": "field_61afab08f1a19",
-            "label": "Intro",
-            "name": "intro",
+            "key": "field_61b50ad48b438",
+            "label": "With Mind Bubble Since",
+            "name": "with_mind_bubble_since",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -216,5 +216,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1638903401
+    "modified": 1639254767
 }
