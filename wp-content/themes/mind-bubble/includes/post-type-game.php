@@ -1,11 +1,11 @@
 <?php
 
 // Register Custom Post Type
-function mb__add_games_cpt() {
+function mb__add_game_cpt() {
 
 	$labels = array(
 		'name'                  => _x( 'Games', 'Post Type General Name', 'text_domain' ),
-		'singular_name'         => _x( 'Games', 'Post Type Singular Name', 'text_domain' ),
+		'singular_name'         => _x( 'Game', 'Post Type Singular Name', 'text_domain' ),
 		'menu_name'             => __( 'Games', 'text_domain' ),
 		'name_admin_bar'        => __( 'Games', 'text_domain' ),
 		'archives'              => __( 'Item Archives', 'text_domain' ),
@@ -51,7 +51,7 @@ function mb__add_games_cpt() {
 		'publicly_queryable'    => true,
 		'capability_type'       => 'page',
 	);
-	register_post_type( 'games', $args );
+	register_post_type( 'game', $args );
 
 }
-add_action( 'init', 'mb__add_games_cpt', 0 );
+add_action( 'init', 'mb__add_game_cpt', 0 );

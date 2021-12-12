@@ -1,7 +1,7 @@
 <?php
 
 // Register Custom Post Type
-function mb__add_workshops_cpt() {
+function mb__add_workshop_cpt() {
 
 	$labels = array(
 		'name'                  => _x( 'Workshops', 'Post Type General Name', 'text_domain' ),
@@ -33,7 +33,7 @@ function mb__add_workshops_cpt() {
 		'filter_items_list'     => __( 'Filter items list', 'text_domain' ),
 	);
 	$args = array(
-		'label'                 => __( 'Workshop', 'text_domain' ),
+		'label'                 => __( 'Workshops', 'text_domain' ),
 		'description'           => __( 'Workshops', 'text_domain' ),
 		'labels'                => $labels,
 		'supports'              => array( 'title', 'author' ),
@@ -52,7 +52,7 @@ function mb__add_workshops_cpt() {
 		'capability_type'       => 'page',
 		'rewrite' => array('slug' => 'past-workshops'),
 	);
-	register_post_type( 'workshops', $args );
+	register_post_type( 'workshop', $args );
 
 }
-add_action( 'init', 'mb__add_workshops_cpt', 0 );
+add_action( 'init', 'mb__add_workshop_cpt', 0 );

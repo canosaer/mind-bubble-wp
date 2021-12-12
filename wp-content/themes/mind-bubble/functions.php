@@ -1,8 +1,8 @@
 <?php
 
-include('includes/post-type-workshops.php');
+include('includes/post-type-workshop.php');
 include('includes/post-type-team.php');
-include('includes/post-type-games.php');
+include('includes/post-type-game.php');
 include('includes/post-type-featured-programs.php');
 include('includes/post-type-tutor.php');
 
