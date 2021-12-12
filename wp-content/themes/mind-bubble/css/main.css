@@ -1643,7 +1643,6 @@ table {
     -ms-grid-column-align: unset;
         justify-self: unset;
     margin: 0 0 12rem 6%;
-    width: 14.65rem;
   }
 }
 @media (min-width: 1200px) {

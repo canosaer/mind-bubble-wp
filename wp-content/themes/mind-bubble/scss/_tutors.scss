@@ -55,7 +55,7 @@
         @include mixins.landscape{
             justify-self: unset;
             margin: 0 0 12rem 6%;
-            width: 14.65rem;
+            // width: 14.65rem;
         }
 
         @include mixins.wide-screen{
