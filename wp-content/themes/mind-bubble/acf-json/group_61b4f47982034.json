@@ -47,7 +47,7 @@
         },
         {
             "key": "field_61b4f8fea39d8",
-            "label": "Button Text",
+            "label": "Tutoring Sign Up Button Text",
             "name": "button_text",
             "type": "text",
             "instructions": "",
@@ -173,5 +173,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1639255615
+    "modified": 1639270486
 }

@@ -10,17 +10,145 @@
 		z-index: -1;
         width: 100%;
         height: 24rem;
+
+        @include mixins.landscape{
+            position: absolute;
+            object-position: center;
+        }
+
+        @include mixins.wide-screen{
+            height: 31.25rem;
+        }
+    }
+
+    &__content{
+        @include mixins.default-grid;
+        width: 100%;
+        max-width: 75rem;
+
+        @include mixins.landscape{
+            margin: 0 auto;
+        }
+
     }
 
     &__text{
         text-align: center;
         line-height: 1.2;
         font-size: 1.6rem;
-        margin: 1rem 1rem;
+        margin: 1.5rem 1rem 1rem;
         opacity: 0.85;
+
+        @include mixins.landscape{
+            text-align: unset;
+            margin: 4rem 1rem 1.4rem 6%;
+            font-size: 2.25rem;
+            width: 25rem;
+        }
+
+    }
+
+    &__button{
+        @include mixins.button;
+        margin-bottom: 2.45rem;
+
+        @include mixins.landscape{
+            justify-self: unset;
+            margin: 0 0 12rem 6%;
+            width: 14.65rem;
+        }
+
+        @include mixins.wide-screen{
+            margin-bottom: 20rem;
+        }
+    }
+}
+
+.tutor-gallery{
+    @include mixins.default-grid;
+    margin: 0 auto 2.5rem;
+    max-width: 75rem;
+
+    &__heading{
+       @include mixins.generic-subheading;
+    }
+
+    &__text{
+        text-align: center;
+        margin: 0 6%;
+        line-height: 1.375;
+        font-size: 1.2rem;
+    }
+
+    &__card-display{
+        @include mixins.default-grid;
+        padding: 2rem 6%;
+        grid-column-gap: 6%;
+        grid-row-gap: 7rem;
+        justify-content: space-around;
+		grid-template-columns: repeat(auto-fit, minmax(13.85rem, 0.4fr));
+        margin-bottom: 5rem;
+    }
+
+    &__fact-heading{
+        text-align: center;
+        margin: 0.25rem 3rem 0.35rem;
+        font-size: 1.125rem;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    &__fact{
+        text-align: center;
+        margin: 0rem 3rem;
+        font-size: 1.125rem;
+        line-height: 1.375;
+    }
+}
+
+.tutor-card{
+    @include mixins.image-slot;
+    padding-bottom: 100%;
+
+    &__image{
+		@include mixins.cover-parent;
+		@include mixins.default-img;
+        border-radius: 0.7rem;
+	}
+
+    &__text-display{
+        position: absolute;
+        bottom: -3rem;
+        height: 37px;
+    }
+
+    &__name{
+        font-size: 1.2rem;
+        width: 100%;
+        text-align: center;
+        color: black;
+        margin-bottom: 0.2rem;
+    }
+
+    &__detail{
+        font-size: 1rem;
+        color: #757575;
+        width: 100%;
+        text-align: center;
+        line-height: 1.15;
+    }
+
+}
+
+.get-help{
+    @include mixins.default-grid;
+
+    &__text{
+        @include mixins.generic-subheading;
     }
 
     &__button{
         @include mixins.button;
     }
+    
 }

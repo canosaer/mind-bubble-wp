@@ -263,11 +263,19 @@
   transition: height 400ms ease-in-out;
 }
 
+// @mixin generic-subheading{
+//   font-weight: bold;
+//   font-size: 2rem;
+//   line-height: 1.1;
+//   position: relative;
+// }
+
 @mixin generic-subheading{
-  font-weight: bold;
-  font-size: 2rem;
-  line-height: 1.1;
-  position: relative;
+  font-size: 1.55rem;
+  line-height: 1.2;
+  opacity: 0.85;
+  margin: 0 1rem 1rem;
+  text-align: center;
 }
 
 @mixin generic-caption{
