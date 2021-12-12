@@ -203,7 +203,7 @@
             {
                 "param": "post_type",
                 "operator": "==",
-                "value": "tutors"
+                "value": "tutor"
             }
         ]
     ],
@@ -216,5 +216,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1639266993
+    "modified": 1639325935
 }

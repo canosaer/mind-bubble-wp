@@ -1,6 +1,6 @@
 <?php
 /*
-* Template Name: Tutors Landing Page
+* Template Name: Tutor Landing Page
 */
 
 get_header();
@@ -20,19 +20,19 @@ get_header();
 
     <div class="tutor-gallery__card-display">
         <?php
-            $tutorsLandingArgs = array(
-                'post_type' => 'tutors',
+            $tutorLandingArgs = array(
+                'post_type' => 'tutor',
                 'posts_per_page' => -1,
                 'orderby' => 'title',
                 'order' => 'asc'
             );
 
-            $tutorsLandingQ = new WP_Query( $tutorsLandingArgs );
-            if($tutorsLandingQ->have_posts()){
+            $tutorLandingQ = new WP_Query( $tutorLandingArgs );
+            if($tutorLandingQ->have_posts()){
             ?>
                 <?php
-                    while ($tutorsLandingQ->have_posts()){
-                        $tutorsLandingQ->the_post();
+                    while ($tutorLandingQ->have_posts()){
+                        $tutorLandingQ->the_post();
                         ?>
                             <a class="tutor-card" href="<?php echo get_the_permalink(); ?>">
                                 <img class="tutor-card__image" src="<?php the_field('headshot'); ?>">

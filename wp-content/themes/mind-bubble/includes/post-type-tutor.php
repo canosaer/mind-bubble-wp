@@ -1,11 +1,11 @@
 <?php
 
 // Register Custom Post Type
-function mb__add_tutors_cpt() {
+function mb__add_tutor_cpt() {
 
 	$labels = array(
 		'name'                  => _x( 'Tutors', 'Post Type General Name', 'text_domain' ),
-		'singular_name'         => _x( 'Tutors', 'Post Type Singular Name', 'text_domain' ),
+		'singular_name'         => _x( 'Tutor', 'Post Type Singular Name', 'text_domain' ),
 		'menu_name'             => __( 'Tutors', 'text_domain' ),
 		'name_admin_bar'        => __( 'Tutors', 'text_domain' ),
 		'archives'              => __( 'Item Archives', 'text_domain' ),
@@ -51,7 +51,7 @@ function mb__add_tutors_cpt() {
 		'publicly_queryable'    => true,
 		'capability_type'       => 'page',
 	);
-	register_post_type( 'tutors', $args );
+	register_post_type( 'tutor', $args );
 
 }
-add_action( 'init', 'mb__add_tutors_cpt', 0 );
+add_action( 'init', 'mb__add_tutor_cpt', 0 );
