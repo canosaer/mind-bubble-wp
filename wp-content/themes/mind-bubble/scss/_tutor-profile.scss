@@ -4,11 +4,13 @@
 .tutor-profile{
     @include mixins.default-grid;
     position: relative;
+    padding-bottom: 3rem;
 
     &__background{
         @include mixins.default-img;
         @include mixins.cover-parent;
         z-index: -2;
+        opacity: 0.9;
     }
 
     &::after{
@@ -27,6 +29,8 @@
     @include mixins.default-grid;
     grid-template-columns: 1fr 1fr;
     text-align: center;
+    max-width: 75rem;
+    margin: 0 auto;
 
     &__heading{
         place-self: end center;
@@ -82,8 +86,10 @@
 .q-a{
     @include mixins.default-grid;
     text-align: center;
+    max-width: 75rem;
+    margin: 0 auto;
 
-    &__q{
+    &__q, &__fact-heading{
         font-weight: bold;
         font-size: 1.1rem;
         margin: 1rem 1.5rem 0.5rem;
@@ -97,11 +103,11 @@
         }
 
         &_1{
-            margin-top: 1.5rem;
+            margin-top: 1.65rem;
         }
     }
 
-    &__a{
+    &__a, &__fun-fact{
         line-height: 1.4;
         font-weight: bold;
         font-size: 1.1rem;

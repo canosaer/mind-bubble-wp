@@ -36,7 +36,7 @@ function mb__add_tutor_cpt() {
 		'label'                 => __( 'Tutors', 'text_domain' ),
 		'description'           => __( 'Tutors', 'text_domain' ),
 		'labels'                => $labels,
-		'supports'              => array( 'title' ),
+		'supports'              => array( 'title', 'author' ),
 		'taxonomies'            => array( 'category', 'post_tag' ),
 		'hierarchical'          => false,
 		'public'                => true,

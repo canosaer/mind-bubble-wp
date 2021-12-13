@@ -10,7 +10,7 @@ get_header();
             <p class="intro__meet">Meet</p> 
             <p class="intro__first-name"><?php the_field('first_name'); ?></p>
         </h2>
-        <p class="intro__with-since"><?php the_field('first_name'); ?> is a volunteer who became part of the Mind Bubble community in <?php the_field('with_since'); ?>!</p>
+        <p class="intro__with-since"><?php the_field('first_name'); ?> is a volunteer who became part of the Mind Bubble community in <?php the_field('with_since'); ?></p>
         <img class="intro__headshot" src="<?php the_field('headshot'); ?>" alt="tutor headshot">    
     </section>
 
@@ -29,7 +29,7 @@ get_header();
 
         <?php
             if(get_field('fun_fact')){ ?>
-                <p class="q-a__fact-heading">Fun Fact:</p>
+                <p class="q-a__fact-heading">Fun Fact</p>
                 <p class="q-a__fun-fact"><?php the_field('fun_fact'); ?></p>
             <?php } 
         ?>       
@@ -37,8 +37,6 @@ get_header();
     </section>
 
 </main>
-
-
 
 <?php
 get_footer();

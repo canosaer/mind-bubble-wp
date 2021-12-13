@@ -24,5 +24,4 @@ function mb_load_scripts() {
     }
     
 }
-
 add_action('wp_enqueue_scripts', 'mb_load_scripts');
