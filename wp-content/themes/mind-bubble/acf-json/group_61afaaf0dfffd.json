@@ -48,7 +48,7 @@
         {
             "key": "field_61b50ad48b438",
             "label": "With Mind Bubble Since",
-            "name": "with_mind_bubble_since",
+            "name": "with_since",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -216,5 +216,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1639331283
+    "modified": 1639410978
 }

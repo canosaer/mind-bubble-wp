@@ -676,7 +676,7 @@ table {
     -ms-grid-row-span: 2;
     grid-row: 3/5;
     margin-left: 1rem;
-    width: 93%;
+    width: 92.5%;
     height: 100%;
     -ms-grid-column-align: left;
         justify-self: left;
@@ -689,7 +689,7 @@ table {
     -ms-grid-row-span: 2;
     grid-row: 3/5;
     margin-left: 1rem;
-    width: 93%;
+    width: 92.5%;
     height: 100%;
     -ms-grid-column-align: left;
         justify-self: left;
@@ -1769,6 +1769,153 @@ table {
 .get-help__button:hover {
   -webkit-filter: brightness(1.1);
           filter: brightness(1.1);
+}
+
+.tutor-profile {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-rows: auto;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+  position: relative;
+}
+.tutor-profile__background {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -2;
+}
+.tutor-profile::after {
+  content: "";
+  position: absolute;
+  background: linear-gradient(whitesmoke, rgba(245, 245, 245, 0));
+  width: 100%;
+  height: 40%;
+  top: 0;
+  z-index: -1;
+}
+
+.tutor-profile .intro {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-rows: auto;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+}
+.tutor-profile .intro__heading {
+  -ms-grid-row-align: end;
+  -ms-grid-column-align: center;
+  place-self: end center;
+  font-size: 2rem;
+  margin: 1.5rem 0 0.5rem;
+}
+@media (min-width: 768px) {
+  .tutor-profile .intro__heading {
+    font-size: 2.85rem;
+  }
+}
+@media (min-width: 1200px) {
+  .tutor-profile .intro__heading {
+    font-size: 3.75rem;
+    margin: 1.5rem 0 1rem;
+  }
+}
+.tutor-profile .intro__first-name {
+  margin-top: 0.3rem;
+  color: var(--orange);
+}
+.tutor-profile .intro__headshot {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
+  -ms-grid-row-align: center;
+  -ms-grid-column-align: center;
+  place-self: center center;
+  width: 70%;
+  border-radius: 0.7rem;
+  margin: 1.5rem;
+}
+@media (min-width: 1200px) {
+  .tutor-profile .intro__headshot {
+    margin: 3.5rem;
+  }
+}
+.tutor-profile .intro__with-since {
+  margin: 0.5rem 1.5rem 1.5rem;
+  font-weight: bold;
+  line-height: 1.4;
+  font-size: 1.1rem;
+}
+@media (min-width: 768px) {
+  .tutor-profile .intro__with-since {
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 1200px) {
+  .tutor-profile .intro__with-since {
+    margin: 1rem 3.5rem 1.5rem;
+    font-size: 1.5rem;
+  }
+}
+
+.q-a {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-rows: auto;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+  text-align: center;
+}
+.q-a__q {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin: 1rem 1.5rem 0.5rem;
+}
+@media (min-width: 768px) {
+  .q-a__q {
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 1200px) {
+  .q-a__q {
+    font-size: 1.5rem;
+  }
+}
+.q-a__q_1 {
+  margin-top: 1.5rem;
+}
+.q-a__a {
+  line-height: 1.4;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin: 0 1.5rem 1rem;
+  color: #333;
+}
+@media (min-width: 768px) {
+  .q-a {
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 1200px) {
+  .q-a {
+    font-size: 1.5rem;
+  }
 }
 
 /* 
