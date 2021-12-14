@@ -7,45 +7,49 @@
 get_header();
 ?>
 
-<section class="team-landing">
-    <h1 class="team-landing__heading">Team</h1>
-    <div class="team-landing__card-display">
+<main class="workshops">
 
     <?php
-        $teamLandingArgs = array(
-            'post_type' => 'team_member',
+        $workshopsLandingArgs = array(
+            'post_type' => 'workshop',
             'posts_per_page' => -1,
-            'meta_key' => 'last_name',
-            'orderby' => 'menu_order meta_value',
-            'order' => 'asc'
+            'orderby' => 'date',
+            'order' => 'desc'
         );
 
-        $teamLandingQ = new WP_Query( $teamLandingArgs );
-        if($teamLandingQ->have_posts()){
+        $workshopsLandingQ = new WP_Query( $workshopsLandingArgs );
+        if($workshopsLandingQ->have_posts()){
         ?>
             <?php
-                while ($teamLandingQ->have_posts()){
-                    $teamLandingQ->the_post();
-                    ?>
-                        <a class="card" href="<?php echo get_the_permalink(); ?>">
-                            <img class="card__image" src="<?php the_field('headshot'); ?>">
-                            <div class="card__text-display">
-                                <h2 class="card__heading"> <?php the_field('name'); ?> </h2>
-                                <h3 class="card__subheading"> <?php the_field('job_title'); ?> </h3>
-                            </div>
-					    </a>
+                while ($workshopsLandingQ->have_posts()){
+                    $workshopsLandingQ->the_post();
+                    $postNumber = $workshopsLandingQ->current_post;
+                    $archiveState = get_field('archive');
+                    if($postNumber == 0 && !$archiveState){ ?>
+                        <img class="workshops__image" src="<?php the_field('image'); ?>" alt="workshops hero image">
+                        <section class="workshop__info">
+                        <!-- <h2 class="workshops-hero__title"><?php the_field('title'); ?></h2>
+                            <a class="workshops__presenter" target="_blank" href="<?php the_field('presenter_link'); ?>"><?php the_field('presenter_name'); ?></a>
+                            <a class="workshops__button" href="#">Sign Up</a> -->
+
+                        </section>
+
+
+                            
+                    <?php 
+                    } ?>
+                        
                     <?php
                 }
             ?>
-            </ul>
+
             <?php
         }
         wp_reset_postdata();
     ?>
 
-    </div>
+</main>
 
-</section>
 
 <?php
 get_footer();

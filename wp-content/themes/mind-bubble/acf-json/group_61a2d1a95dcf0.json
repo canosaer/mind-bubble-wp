@@ -85,8 +85,27 @@
         },
         {
             "key": "field_61a2d1e8322f2",
-            "label": "Presenter",
-            "name": "presenter",
+            "label": "Presenter Name",
+            "name": "presenter_name",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_61b8f260424cc",
+            "label": "Presenter Link",
+            "name": "presenter_link",
             "type": "link",
             "instructions": "",
             "required": 0,
@@ -96,7 +115,7 @@
                 "class": "",
                 "id": ""
             },
-            "return_format": "array"
+            "return_format": "url"
         },
         {
             "key": "field_61a2d25e322f4",
@@ -154,6 +173,25 @@
             "prepend": "",
             "append": "",
             "maxlength": ""
+        },
+        {
+            "key": "field_61b8f6e1411c7",
+            "label": "archive",
+            "name": "archive",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
         }
     ],
     "location": [
@@ -161,7 +199,7 @@
             {
                 "param": "post_type",
                 "operator": "==",
-                "value": "workshops"
+                "value": "workshop"
             }
         ]
     ],
@@ -174,5 +212,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1638062229
+    "modified": 1639511860
 }

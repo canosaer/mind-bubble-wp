@@ -1792,7 +1792,7 @@ table {
   top: 0;
   left: 0;
   z-index: -2;
-  opacity: 0.7;
+  opacity: 0.6;
 }
 .tutor-profile::after {
   content: "";
