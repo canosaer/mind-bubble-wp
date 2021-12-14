@@ -65,7 +65,7 @@ get_header();
             else{
             ?>
                 <h3 class="results__null-heading">No results found.</h3>
-                <p>Nothing matched your search criteria. Please try again with some different keywords.</p>
+                <p class="results__null-text">Nothing matched your search criteria. Please try again with some different keywords.</p>
             <?php }
             wp_reset_postdata(); 
         ?>

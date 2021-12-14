@@ -2030,6 +2030,14 @@ table {
   color: #4d6dd1;
   margin-bottom: 2rem;
 }
+.search-results .results__null-heading {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+.search-results .results__null-text {
+  line-height: 1.4;
+  color: #333;
+}
 
 /* 
 ==============================================
