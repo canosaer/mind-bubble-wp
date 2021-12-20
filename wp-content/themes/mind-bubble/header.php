@@ -20,7 +20,7 @@
         ?>
     </head>
 
-    <body>
+    <body <?php body_class(); ?>>
         <div class="page-container">
             <header class="site-header">
                 <nav class="menu">
