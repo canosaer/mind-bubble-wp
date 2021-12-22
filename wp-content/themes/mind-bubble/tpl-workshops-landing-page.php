@@ -20,6 +20,7 @@ get_header();
         $workshopsLandingQ = new WP_Query( $workshopsLandingArgs );
         if($workshopsLandingQ->have_posts()){
             $activeSignUp = false;
+            $archiveHeading = false;
             while ($workshopsLandingQ->have_posts()){
                 $workshopsLandingQ->the_post();
                 $postNumber = $workshopsLandingQ->current_post;
@@ -42,7 +43,8 @@ get_header();
                         </div>
                     </section>
                     <iframe class="workshops__form" src="https://docs.google.com/forms/d/e/<?php the_field('google_form_id'); ?>/viewform?embedded=true" frameborder="0" width="100%" height="500" marginheight="0" marginwidth="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-                  
+                    <h3 class="workshops__cancel-heading">Cancellation Policy</h3>
+                    <p class="workshops__cancel-text">Our workshops are always 100% free - but be advised that canceling your student's registration within a week of the workshop incurs a $5 cancellation fee. Canceling within 24 hours of the workshop incurs a $10 cancellation fee. Not showing up without notifying us of cancellation in advance incurs a $20 cancellation fee. Because we never want money to be a barrier for students who wish to take advantage of our workshops, we'll cover the first $20 of cancellation fees you incur each calendar year. Cancellation fees prevent you from being able to sign up for workshops until they are paid.</p>
                 <?php 
                 }
                 if(!$activeSignUp){ 
@@ -51,6 +53,12 @@ get_header();
                     <p class="workshops__overview">Mind Bubble's educational workshops provide engaging learning experiences in a variety of topics students aren't likely to encounter during their normal school day. We've offered workshops on everything from epidemiology to mathematics to poetry and more!</p>
                     <p class="workshops__cta">Mind Bubble is busy cooking up its next workshop! Check back here for more details soon!</p>
                 <?php 
+                }
+                if(!$archiveHeading){
+                    $archiveHeading = true; ?>
+                    <section class="archive">
+                        <h3 class="archive__heading">Past Workshops</h3>
+                <?php
                 } ?>
                 
                 
@@ -62,6 +70,7 @@ get_header();
         }
         wp_reset_postdata();
     ?>
+    </section>
 
 </main>
 
