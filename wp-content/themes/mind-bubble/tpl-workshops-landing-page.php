@@ -42,7 +42,7 @@ get_header();
                             <a class="details__button" href="#sign-up">Sign Up</a>
                         </div>
                     </section>
-                    <iframe class="workshops__form" src="https://docs.google.com/forms/d/e/<?php the_field('google_form_id'); ?>/viewform?embedded=true" frameborder="0" width="100%" height="500" marginheight="0" marginwidth="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+                    <iframe class="workshops__form" src="https://docs.google.com/forms/d/e/<?php the_field('google_form_id'); ?>/viewform?embedded=true" frameborder="0" width="100%" height="500" marginheight="0" marginwidth="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" loading="lazy"></iframe>
                     <h3 class="workshops__cancel-heading">Cancellation Policy</h3>
                     <p class="workshops__cancel-text">Our workshops are always 100% free - but be advised that canceling your student's registration within a week of the workshop incurs a $5 cancellation fee. Canceling within 24 hours of the workshop incurs a $10 cancellation fee. Not showing up without notifying us of cancellation in advance incurs a $20 cancellation fee. Because we never want money to be a barrier for students who wish to take advantage of our workshops, we'll cover the first $20 of cancellation fees you incur each calendar year. Cancellation fees prevent you from being able to sign up for workshops until they are paid.</p>
                 <?php 
@@ -59,10 +59,17 @@ get_header();
                     <section class="archive">
                         <h3 class="archive__heading">Past Workshops</h3>
                 <?php
-                } ?>
-                
-                
-            <?php //render "past workshops" only if archiveState = true
+                }
+                if($postNumber < 12 && $archiveState){ ?>
+                    <a class="archive__image-slot" href="<?php the_permalink(); ?>">
+                        <img class="archive__image" src="<?php the_field('image'); ?>" loading="lazy" alt="workshops archive image">
+                    </a>
+                    <p class="archive__title"><?php the_field('title'); ?></p>
+                    <p class="archive__presenter">Presented By: <a class="archive__presenter-link" target="_blank" href="<?php the_field('presenter_link'); ?>"><?php the_field('presenter_name'); ?></a></p>
+                    <p class="archive__date-time"><?php the_field('date'); ?>, <?php the_field('time'); ?></p>
+                    <p class="archive__grades">Grades <?php the_field('grade_range'); ?></p>
+                <?php
+                }
             }
         ?>
 
