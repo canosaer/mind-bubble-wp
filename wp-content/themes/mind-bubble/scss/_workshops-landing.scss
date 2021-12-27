@@ -3,6 +3,8 @@
 
 .workshops{
     @include mixins.default-grid;
+    max-width: 63rem;
+    justify-self: center;
 
     &__image{
         @include mixins.default-img;
@@ -22,20 +24,37 @@
         font-size: 1.6rem;
         opacity: 0.9;
         margin: 0 1.5rem 1.5rem 1.5rem;
+
+        @include mixins.wide-screen{
+            margin: 0 0 1.5rem 0;
+        }
     }
     
     &__description{
         line-height: 1.4;
         font-size: 1rem;
         margin: 0 1.5rem;
+
+        @include mixins.wide-screen{
+            margin: 0;
+            line-height: 1.5;
+        }
     }
 
     &__description > p{
         margin-bottom: 1rem;
+
+        @include mixins.wide-screen{
+            margin-bottom: 1.5rem;
+        }
     }
 
     &__form{
         margin: 0.5rem 0 2rem;
+
+        @include mixins.wide-screen{
+            margin-bottom: 3rem;
+        }
     }
 
     &__cancel-heading{
@@ -46,6 +65,10 @@
     &__cancel-text{
         line-height: 1.4;
         margin: 0 1.5rem;
+
+        @include mixins.wide-screen{
+            line-height: 1.5;
+        }
     }
 }
 
@@ -54,6 +77,10 @@
     background-color: rgba(0,0,0,0.05);
     padding: 1.5rem;
     margin-bottom: 1.5rem;
+
+    @include mixins.medium-screen{
+        border-radius: 0.7rem;
+    }
 
     &__title{
         text-transform: uppercase;
@@ -90,14 +117,27 @@
     &__heading{
         @include mixins.workshops-heading;
         margin: 1.5rem 0 1.5rem;
+
+        @include mixins.medium-screen{
+            margin: 3rem 0 1.5rem;
+        }
     }
 
     &__image{
         @include mixins.default-img;
         width: 100%;
+
+        @include mixins.medium-screen{
+            border-radius: 0.7rem;
+        }
+        
     }
 
     &__image-slot{
         margin-bottom: 1.5rem;
+
+        @include mixins.medium-screen{
+            margin-bottom: 3rem;
+        }
     }
 }

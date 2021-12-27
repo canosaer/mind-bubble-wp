@@ -42,7 +42,7 @@ get_header();
                             <a class="details__button" href="#sign-up">Sign Up</a>
                         </div>
                     </section>
-                    <iframe class="workshops__form" src="https://docs.google.com/forms/d/e/<?php the_field('google_form_id'); ?>/viewform?embedded=true" frameborder="0" width="100%" height="500" marginheight="0" marginwidth="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" loading="lazy"></iframe>
+                    <iframe class="workshops__form" id="sign-up" src="https://docs.google.com/forms/d/e/<?php the_field('google_form_id'); ?>/viewform?embedded=true" frameborder="0" width="100%" height="500" marginheight="0" marginwidth="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" loading="lazy"></iframe>
                     <h3 class="workshops__cancel-heading">Cancellation Policy</h3>
                     <p class="workshops__cancel-text">Our workshops are always 100% free - but be advised that canceling your student's registration within a week of the workshop incurs a $5 cancellation fee. Canceling within 24 hours of the workshop incurs a $10 cancellation fee. Not showing up without notifying us of cancellation in advance incurs a $20 cancellation fee. Because we never want money to be a barrier for students who wish to take advantage of our workshops, we'll cover the first $20 of cancellation fees you incur each calendar year. Cancellation fees prevent you from being able to sign up for workshops until they are paid.</p>
                 <?php 
