@@ -324,3 +324,9 @@
     opacity: 1;
   }
 }
+
+@mixin workshops-heading{
+  font-size: 1.6rem;
+  opacity: 0.9;
+  margin: 0 1.5rem 1.5rem 1.5rem;
+}

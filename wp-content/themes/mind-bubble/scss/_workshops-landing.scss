@@ -1,0 +1,109 @@
+@use 'variables';
+@use 'mixins';
+
+.workshops{
+    @include mixins.default-grid;
+
+    &__image{
+        @include mixins.default-img;
+        width: 100%;
+    }
+
+    &__info{
+        @include mixins.default-grid;
+    }
+
+    &__sign-up{
+        @include mixins.button;
+        margin: 1.5rem 0rem;
+    }
+
+    &__description-heading{
+        font-size: 1.6rem;
+        opacity: 0.9;
+        margin: 0 1.5rem 1.5rem 1.5rem;
+    }
+    
+    &__description{
+        line-height: 1.4;
+        font-size: 1rem;
+        margin: 0 1.5rem;
+    }
+
+    &__description > p{
+        margin-bottom: 1rem;
+    }
+
+    &__form{
+        margin: 0.5rem 0 2rem;
+    }
+
+    &__cancel-heading{
+        font-size: 1.1rem;
+        margin: 0rem 1.5rem 1rem;
+    }
+
+    &__cancel-text{
+        line-height: 1.4;
+        margin: 0 1.5rem;
+    }
+}
+
+.details{
+    @include mixins.default-grid;
+    background-color: rgba(0,0,0,0.05);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+
+    &__title{
+        text-transform: uppercase;
+        font-size: 1.05rem;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+    }
+
+    &__presenter{
+        margin-bottom: 0.5rem;
+    }
+
+    &__date-time{
+        margin-bottom: 0.5rem;
+    }
+
+    &__grades{
+        margin-bottom: 0.5rem;
+    }
+
+    &__price{
+        font-weight: bold;
+    }
+
+    &__button{
+        display: none;
+    }
+}
+
+.archive{
+    @include mixins.default-grid;
+
+    &__heading{
+        @include mixins.workshops-heading;
+        margin-top: 1.5rem;
+        position: relative;
+        width: 100%;
+
+        &:after{
+            content: "";
+            position: absolute;
+            height: 1px;
+            width: 100%;
+            background-color: rgba(0,0,0,0.3);
+            bottom: -1.5rem;
+            left: 0;
+        }
+    }
+
+    &__image{
+        @include mixins.default-img;
+    }
+}

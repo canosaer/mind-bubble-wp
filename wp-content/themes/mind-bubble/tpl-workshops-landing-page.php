@@ -31,8 +31,8 @@ get_header();
                     <img class="workshops__image" src="<?php the_field('image'); ?>" alt="workshops hero image">
                     <section class="workshops__info">
                         <a class="workshops__sign-up workshops__sign-up_intro" href="#sign-up">Sign Up</a>
-                        <h2 class="workshops__description-heading">Workshop Description</h2>
-                        <p class="workshops__description"><?php the_field('description'); ?></p>
+                        <h2 class="workshops__description-heading">About the workshop</h2>
+                        <div class="workshops__description"><?php the_field('description'); ?></div>
                         <div class="details">
                             <h3 class="details__title"><?php the_field('title'); ?></h3>
                             <p class="details__presenter">Presented By: <a class="details__presenter-link" target="_blank" href="<?php the_field('presenter_link'); ?>"><?php the_field('presenter_name'); ?></a></p>

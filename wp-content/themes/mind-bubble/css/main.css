@@ -2040,6 +2040,135 @@ table {
   color: #333;
 }
 
+.workshops {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-rows: auto;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+}
+.workshops__image {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  width: 100%;
+}
+.workshops__info {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-rows: auto;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+}
+.workshops__sign-up {
+  text-align: center;
+  background: #4d6dd1;
+  color: white;
+  height: 2rem;
+  padding: 1rem;
+  font-size: 1.2rem;
+  height: 3rem;
+  width: 20rem;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  z-index: 1;
+  border-radius: 999rem;
+  cursor: pointer;
+  margin: 1.5rem 0rem;
+}
+.workshops__sign-up:hover {
+  -webkit-filter: brightness(1.1);
+          filter: brightness(1.1);
+}
+.workshops__description-heading {
+  font-size: 1.6rem;
+  opacity: 0.9;
+  margin: 0 1.5rem 1.5rem 1.5rem;
+}
+.workshops__description {
+  line-height: 1.4;
+  font-size: 1rem;
+  margin: 0 1.5rem;
+}
+.workshops__description > p {
+  margin-bottom: 1rem;
+}
+.workshops__form {
+  margin: 0.5rem 0 2rem;
+}
+.workshops__cancel-heading {
+  font-size: 1.1rem;
+  margin: 0rem 1.5rem 1rem;
+}
+.workshops__cancel-text {
+  line-height: 1.4;
+  margin: 0 1.5rem;
+}
+
+.details {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-rows: auto;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.details__title {
+  text-transform: uppercase;
+  font-size: 1.05rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.details__presenter {
+  margin-bottom: 0.5rem;
+}
+.details__date-time {
+  margin-bottom: 0.5rem;
+}
+.details__grades {
+  margin-bottom: 0.5rem;
+}
+.details__price {
+  font-weight: bold;
+}
+.details__button {
+  display: none;
+}
+
+.archive {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-rows: auto;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+}
+.archive__heading {
+  font-size: 1.6rem;
+  opacity: 0.9;
+  margin: 0 1.5rem 1.5rem 1.5rem;
+  margin-top: 1.5rem;
+  position: relative;
+  width: 100%;
+}
+.archive__heading:after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  bottom: -1.5rem;
+  left: 0;
+}
+.archive__image {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
 /* 
 ==============================================
 CONTENT:	Mind Bubble WP
