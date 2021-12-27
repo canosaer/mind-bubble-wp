@@ -64,10 +64,6 @@ get_header();
                     <a class="archive__image-slot" href="<?php the_permalink(); ?>">
                         <img class="archive__image" src="<?php the_field('image'); ?>" loading="lazy" alt="workshops archive image">
                     </a>
-                    <p class="archive__title"><?php the_field('title'); ?></p>
-                    <p class="archive__presenter">Presented By: <a class="archive__presenter-link" target="_blank" href="<?php the_field('presenter_link'); ?>"><?php the_field('presenter_name'); ?></a></p>
-                    <p class="archive__date-time"><?php the_field('date'); ?>, <?php the_field('time'); ?></p>
-                    <p class="archive__grades">Grades <?php the_field('grade_range'); ?></p>
                 <?php
                 }
             }

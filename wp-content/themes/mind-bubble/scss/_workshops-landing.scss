@@ -85,25 +85,19 @@
 
 .archive{
     @include mixins.default-grid;
+    padding: 0 1.5rem;
 
     &__heading{
         @include mixins.workshops-heading;
-        margin-top: 1.5rem;
-        position: relative;
-        width: 100%;
-
-        &:after{
-            content: "";
-            position: absolute;
-            height: 1px;
-            width: 100%;
-            background-color: rgba(0,0,0,0.3);
-            bottom: -1.5rem;
-            left: 0;
-        }
+        margin: 1.5rem 0 1.5rem;
     }
 
     &__image{
         @include mixins.default-img;
+        width: 100%;
+    }
+
+    &__image-slot{
+        margin-bottom: 1.5rem;
     }
 }
