@@ -49,13 +49,15 @@ get_header();
                 }
                 if(!$activeSignUp){ 
                     $activeSignUp = true; ?>
-                    <img class="workshops__image" src="http://localhost/wp-content/uploads/2021/12/workshops.png" alt="workshops hero image">
+                    <img class="workshops__image" src="http://localhost/wp-content/uploads/2021/12/workshops3.png" alt="workshops hero image">
                     <p class="workshops__overview">Mind Bubble's educational workshops provide engaging learning experiences in a variety of topics students aren't likely to encounter during their normal school day. We've offered workshops on everything from epidemiology to mathematics to poetry and more!</p>
                     <p class="workshops__cta">Mind Bubble is busy cooking up its next workshop! Check back here for more details soon!</p>
                 <?php 
                 }
                 if(!$archiveHeading){ //ADD VOLUNTEER TEXT
                     $archiveHeading = true; ?>
+                    <h3 class="workshops__volunteer-heading">Volunteer</h3>
+                    <p class="workshops__volunteer-text">If you're interested in sharing your knowledge and skills with young people - fill out a <a class="workshops__volunteer-link" href="http://localhost/volunteer/">volunteer application</a> to let us know! We're always looking for new workshop facilitators with exciting ideas!</p>
                     <section class="archive">
                         <h3 class="archive__heading">Past Workshops</h3>
                 <?php

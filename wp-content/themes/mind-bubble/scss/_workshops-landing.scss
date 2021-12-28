@@ -25,18 +25,18 @@
         opacity: 0.9;
         margin: 0 1.5rem 1.5rem 1.5rem;
 
-        @include mixins.wide-screen{
-            margin: 0 0 1.5rem 0;
-        }
+        // @include mixins.wide-screen{
+        //     margin: 0 0 1.5rem 0;
+        // }
     }
     
-    &__description{
+    &__description, &__overview, &__cta{
         line-height: 1.4;
         font-size: 1rem;
         margin: 0 1.5rem;
 
         @include mixins.wide-screen{
-            margin: 0;
+            // margin: 0;
             line-height: 1.5;
         }
     }
@@ -49,6 +49,10 @@
         }
     }
 
+    &__overview{
+        margin: 1.5rem;
+    }
+
     &__form{
         margin: 0.5rem 0 2rem;
 
@@ -57,12 +61,16 @@
         }
     }
 
-    &__cancel-heading{
+    &__cancel-heading, &__volunteer-heading{
         font-size: 1.1rem;
         margin: 0rem 1.5rem 1rem;
     }
 
-    &__cancel-text{
+    &__volunteer-heading{
+        margin-top: 1.5rem;
+    }
+
+    &__cancel-text, &__volunteer-text{
         line-height: 1.4;
         margin: 0 1.5rem;
 
@@ -116,11 +124,7 @@
 
     &__heading{
         @include mixins.workshops-heading;
-        margin: 1.5rem 0 1.5rem;
-
-        @include mixins.medium-screen{
-            margin: 3rem 0 1.5rem;
-        }
+        margin: 3rem 0 1.5rem;
     }
 
     &__image{

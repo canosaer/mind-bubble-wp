@@ -2089,19 +2089,13 @@ table {
   opacity: 0.9;
   margin: 0 1.5rem 1.5rem 1.5rem;
 }
-@media (min-width: 1200px) {
-  .workshops__description-heading {
-    margin: 0 0 1.5rem 0;
-  }
-}
-.workshops__description {
+.workshops__description, .workshops__overview, .workshops__cta {
   line-height: 1.4;
   font-size: 1rem;
   margin: 0 1.5rem;
 }
 @media (min-width: 1200px) {
-  .workshops__description {
-    margin: 0;
+  .workshops__description, .workshops__overview, .workshops__cta {
     line-height: 1.5;
   }
 }
@@ -2113,6 +2107,9 @@ table {
     margin-bottom: 1.5rem;
   }
 }
+.workshops__overview {
+  margin: 1.5rem;
+}
 .workshops__form {
   margin: 0.5rem 0 2rem;
 }
@@ -2121,16 +2118,19 @@ table {
     margin-bottom: 3rem;
   }
 }
-.workshops__cancel-heading {
+.workshops__cancel-heading, .workshops__volunteer-heading {
   font-size: 1.1rem;
   margin: 0rem 1.5rem 1rem;
 }
-.workshops__cancel-text {
+.workshops__volunteer-heading {
+  margin-top: 1.5rem;
+}
+.workshops__cancel-text, .workshops__volunteer-text {
   line-height: 1.4;
   margin: 0 1.5rem;
 }
 @media (min-width: 1200px) {
-  .workshops__cancel-text {
+  .workshops__cancel-text, .workshops__volunteer-text {
     line-height: 1.5;
   }
 }
@@ -2184,12 +2184,7 @@ table {
   font-size: 1.6rem;
   opacity: 0.9;
   margin: 0 1.5rem 1.5rem 1.5rem;
-  margin: 1.5rem 0 1.5rem;
-}
-@media (min-width: 1024px) {
-  .archive__heading {
-    margin: 3rem 0 1.5rem;
-  }
+  margin: 3rem 0 1.5rem;
 }
 .archive__image {
   -o-object-fit: cover;
