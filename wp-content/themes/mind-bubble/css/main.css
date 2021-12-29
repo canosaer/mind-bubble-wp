@@ -2134,8 +2134,7 @@ table {
     line-height: 1.5;
   }
 }
-
-.details {
+.workshops .details {
   display: -ms-grid;
   display: grid;
   grid-auto-rows: auto;
@@ -2146,33 +2145,29 @@ table {
   margin-bottom: 1.5rem;
 }
 @media (min-width: 1024px) {
-  .details {
+  .workshops .details {
     border-radius: 0.7rem;
   }
 }
-.details__title {
+.workshops .details__title {
   text-transform: uppercase;
   font-size: 1.05rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
 }
-.details__presenter {
+.workshops .details__presenter {
   margin-bottom: 0.5rem;
 }
-.details__date-time {
+.workshops .details__date-time {
   margin-bottom: 0.5rem;
 }
-.details__grades {
+.workshops .details__grades {
   margin-bottom: 0.5rem;
 }
-.details__price {
+.workshops .details__price {
   font-weight: bold;
 }
-.details__button {
-  display: none;
-}
-
-.archive {
+.workshops .archive {
   display: -ms-grid;
   display: grid;
   grid-auto-rows: auto;
@@ -2180,13 +2175,13 @@ table {
   grid-template-columns: 1fr;
   padding: 0 1.5rem;
 }
-.archive__heading {
+.workshops .archive__heading {
   font-size: 1.6rem;
   opacity: 0.9;
   margin: 0 1.5rem 1.5rem 1.5rem;
   margin: 3rem 0 1.5rem;
 }
-.archive__image {
+.workshops .archive__image {
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
@@ -2194,17 +2189,21 @@ table {
   width: 100%;
 }
 @media (min-width: 1024px) {
-  .archive__image {
+  .workshops .archive__image {
     border-radius: 0.7rem;
   }
 }
-.archive__image-slot {
+.workshops .archive__image-slot {
   margin-bottom: 1.5rem;
 }
 @media (min-width: 1024px) {
-  .archive__image-slot {
+  .workshops .archive__image-slot {
     margin-bottom: 3rem;
   }
+}
+
+.workshops_single .workshops__description-heading {
+  margin-top: 1.5rem;
 }
 
 /* 

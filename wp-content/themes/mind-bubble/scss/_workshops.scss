@@ -78,70 +78,74 @@
             line-height: 1.5;
         }
     }
-}
 
-.details{
-    @include mixins.default-grid;
-    background-color: rgba(0,0,0,0.05);
-    padding: 1.5rem;
-    margin-bottom: 1.5rem;
-
-    @include mixins.medium-screen{
-        border-radius: 0.7rem;
-    }
-
-    &__title{
-        text-transform: uppercase;
-        font-size: 1.05rem;
-        font-weight: bold;
-        margin-bottom: 0.5rem;
-    }
-
-    &__presenter{
-        margin-bottom: 0.5rem;
-    }
-
-    &__date-time{
-        margin-bottom: 0.5rem;
-    }
-
-    &__grades{
-        margin-bottom: 0.5rem;
-    }
-
-    &__price{
-        font-weight: bold;
-    }
-
-    &__button{
-        display: none;
-    }
-}
-
-.archive{
-    @include mixins.default-grid;
-    padding: 0 1.5rem;
-
-    &__heading{
-        @include mixins.workshops-heading;
-        margin: 3rem 0 1.5rem;
-    }
-
-    &__image{
-        @include mixins.default-img;
-        width: 100%;
-
+    .details{
+        @include mixins.default-grid;
+        background-color: rgba(0,0,0,0.05);
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
+    
         @include mixins.medium-screen{
             border-radius: 0.7rem;
         }
-        
-    }
-
-    &__image-slot{
-        margin-bottom: 1.5rem;
-
-        @include mixins.medium-screen{
-            margin-bottom: 3rem;
+    
+        &__title{
+            text-transform: uppercase;
+            font-size: 1.05rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
         }
+    
+        &__presenter{
+            margin-bottom: 0.5rem;
+        }
+    
+        &__date-time{
+            margin-bottom: 0.5rem;
+        }
+    
+        &__grades{
+            margin-bottom: 0.5rem;
+        }
+    
+        &__price{
+            font-weight: bold;
+        }
+    }
+    
+    .archive{
+        @include mixins.default-grid;
+        padding: 0 1.5rem;
+    
+        &__heading{
+            @include mixins.workshops-heading;
+            margin: 3rem 0 1.5rem;
+        }
+    
+        &__image{
+            @include mixins.default-img;
+            width: 100%;
+    
+            @include mixins.medium-screen{
+                border-radius: 0.7rem;
+            }
+            
+        }
+    
+        &__image-slot{
+            margin-bottom: 1.5rem;
+    
+            @include mixins.medium-screen{
+                margin-bottom: 3rem;
+            }
+        }
+    }
+}
+
+
+
+.workshops_single{
+    .workshops__description-heading{
+        margin-top: 1.5rem;
     }
 }

@@ -39,7 +39,6 @@ get_header();
                             <p class="details__date-time"><?php the_field('date'); ?>, <?php the_field('time'); ?></p>
                             <p class="details__grades">Best for grades <?php the_field('grade_range'); ?></p>
                             <p class="details__price">FREE</p>
-                            <a class="details__button" href="#sign-up">Sign Up</a>
                         </div>
                     </section>
                     <iframe class="workshops__form" id="sign-up" src="https://docs.google.com/forms/d/e/<?php the_field('google_form_id'); ?>/viewform?embedded=true" frameborder="0" width="100%" height="500" marginheight="0" marginwidth="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" loading="lazy"></iframe>
