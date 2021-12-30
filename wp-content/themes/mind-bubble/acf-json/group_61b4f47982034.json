@@ -118,25 +118,6 @@
             "maxlength": ""
         },
         {
-            "key": "field_61b4f4c9aa623",
-            "label": "Did You Know?",
-            "name": "did_you_know",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
             "key": "field_61b50e10c1547",
             "label": "More Info Email Address",
             "name": "more_info_email_address",
@@ -173,5 +154,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1639270486
+    "modified": 1640880184
 }

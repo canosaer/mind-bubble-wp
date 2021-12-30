@@ -28,6 +28,7 @@ get_header();
                 if($postNumber == 0 && !$archiveState){ 
                     $activeSignUp = true;
                     ?>
+                    <h1 class="page-title">Workshops</h1>
                     <img class="workshops__image" src="<?php the_field('image'); ?>" alt="workshops hero image">
                     <section class="workshops__info">
                         <a class="workshops__sign-up workshops__sign-up_intro" href="#sign-up">Sign Up</a>

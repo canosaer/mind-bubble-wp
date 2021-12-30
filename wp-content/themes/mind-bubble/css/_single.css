@@ -1,0 +1,47 @@
+:root {
+  --heading-font: "Spectral", serif;
+  --dark-blue: rgb(12, 35, 64);
+  --filter-blue: rgba(1, 33, 105, 0.45);
+  --gold: rgb(156, 136, 107);
+  --yellow: rgb(242, 169, 0);
+  --gray: rgb(65, 71, 81);
+  --light-yellow: rgba(242, 169, 0, 0.7);
+  --blue: #2c5282;
+  --orange: #ed8936;
+}
+
+.singular {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-rows: auto;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+  max-width: 63rem;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+.singular img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  height: auto;
+}
+.singular p {
+  line-height: 1.5rem;
+  line-height: 1.4;
+  font-size: 1rem;
+  margin: 0 1.5rem 1rem;
+}
+.singular iframe {
+  margin-bottom: 2rem;
+}
+
+.page-title {
+  font-size: 1.6rem;
+  opacity: 0.9;
+  margin: 1.5rem;
+  text-align: center;
+  font-weight: bold;
+}
+/*# sourceMappingURL=_single.css.map */

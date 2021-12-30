@@ -50,9 +50,6 @@ get_header();
             wp_reset_postdata();
         ?>
     </div>
-
-    <h3 class="tutor-gallery__fact-heading">Did You Know?</h3>
-    <p class="tutor-gallery__fact"><?php the_field('did_you_know'); ?></p>
 </section>
 
 <section class="get-help">
