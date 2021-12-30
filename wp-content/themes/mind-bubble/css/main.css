@@ -2215,6 +2215,7 @@ table {
   max-width: 63rem;
   -ms-grid-column-align: center;
       justify-self: center;
+  line-height: 1.4;
 }
 .singular img {
   -o-object-fit: cover;
@@ -2224,9 +2225,6 @@ table {
   height: auto;
 }
 .singular p {
-  line-height: 1.5rem;
-  line-height: 1.4;
-  font-size: 1rem;
   margin: 0 1.5rem 1rem;
 }
 .singular iframe {
@@ -2272,7 +2270,7 @@ a {
   text-decoration: none;
 }
 
-strong {
+b, strong {
   font-weight: bold;
 }
 
@@ -2286,6 +2284,30 @@ em {
   grid-auto-rows: auto;
   -ms-grid-columns: 1fr;
   grid-template-columns: 1fr;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+textarea {
+  overflow: auto;
 }
 
 /* 2. Utility ================================ */

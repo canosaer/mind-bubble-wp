@@ -19,6 +19,7 @@
   max-width: 63rem;
   -ms-grid-column-align: center;
       justify-self: center;
+  line-height: 1.4;
 }
 .singular img {
   -o-object-fit: cover;
@@ -28,9 +29,6 @@
   height: auto;
 }
 .singular p {
-  line-height: 1.5rem;
-  line-height: 1.4;
-  font-size: 1rem;
   margin: 0 1.5rem 1rem;
 }
 .singular iframe {

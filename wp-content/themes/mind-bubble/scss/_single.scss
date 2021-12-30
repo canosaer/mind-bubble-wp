@@ -5,6 +5,7 @@
     @include mixins.default-grid;
     max-width: 63rem;
     justify-self: center;
+    line-height: 1.4;
 
     img{
         @include mixins.default-img;
@@ -12,9 +13,6 @@
     }
 
     p{
-        line-height: 1.5rem;
-        line-height: 1.4;
-        font-size: 1rem;
         margin: 0 1.5rem 1rem;
     }
 
