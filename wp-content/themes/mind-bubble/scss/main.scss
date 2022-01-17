@@ -37,6 +37,7 @@ TABLE OF CONTENTS:
 @use 'search-results';
 @use 'workshops';
 @use 'single';
+@use 'calendar';
 
 /* 2. General =============================== */
 
@@ -88,6 +89,8 @@ sup {
 textarea {
 	overflow: auto;
 }
+
+
 
 
 /* 2. Utility ================================ */

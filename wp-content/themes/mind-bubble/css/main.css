@@ -2239,6 +2239,14 @@ table {
   font-weight: bold;
 }
 
+.calendar {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-rows: auto;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+}
+
 /* 
 ==============================================
 CONTENT:	Mind Bubble WP

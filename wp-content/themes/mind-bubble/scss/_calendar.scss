@@ -1,0 +1,8 @@
+@use 'variables';
+@use 'mixins';
+
+.calendar{
+    @include mixins.default-grid;
+
+    
+}
